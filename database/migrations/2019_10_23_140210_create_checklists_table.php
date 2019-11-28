@@ -17,7 +17,7 @@ class CreateChecklistsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('title');
-            $table->integer('price');
+            $table->integer('checked')->nullable();
             $table->timestamps();
         });
     }

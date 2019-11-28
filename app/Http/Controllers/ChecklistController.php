@@ -16,7 +16,9 @@ class ChecklistController extends Controller
     {
         $checklists = Checklist::all();
 
-        return view('checklists.index', ['checklists' => $checklists]); 
+        //$checklists = Checklist::with('user_id')->get();
+
+        return view('checklist.index', ['checklists' => $checklists]); 
 
     }
 
@@ -29,7 +31,7 @@ class ChecklistController extends Controller
     {
         $checklist = new Checklist;
 
-        return view('checklists.create', ['checklist' => $checklist]);
+        return view('checklist.create', ['checklist' => $checklist]);
     }
 
     /**
@@ -50,7 +52,7 @@ class ChecklistController extends Controller
         $checklist->user_id = auth()->id(); 
         $checklist->save(); 
         
-        return redirect()->route('checklists.index')->with('success','Checklist created'); 
+        return redirect()->route('checklist.index')->with('success','Checklist created'); 
         
     }
 
@@ -64,7 +66,7 @@ class ChecklistController extends Controller
     {
         $checklist = Checklist::findOrFail($id);
 
-        return view('checklists.show', ['checklist' => $checklist]); 
+        return view('checklist.show', ['checklist' => $checklist]); 
     }
 
     /**
@@ -77,7 +79,7 @@ class ChecklistController extends Controller
     {
         $checklist = Checklist::findOrFail($id);
 
-        return view('checklists.edit', ['checklist' => $checklist]); 
+        return view('checklist.edit', ['checklist' => $checklist]); 
             
     }
 
@@ -99,7 +101,7 @@ class ChecklistController extends Controller
         $checklist->fill($request->all());
         $checklist->save(); 
         
-        return redirect()->route('checklists.index')->with('success','Checklist updated');
+        return redirect()->route('checklist.index')->with('success','Checklist updated');
     }
 
     /**
@@ -113,6 +115,6 @@ class ChecklistController extends Controller
         $checklist = Checklist::findOrFail($id);
         $checklist->delete();
 
-        return redirect()->route('checklists.index')->with('success','Checklist deleted'); 
+        return redirect()->route('checklist.index')->with('success','Checklist deleted'); 
     }
 }
