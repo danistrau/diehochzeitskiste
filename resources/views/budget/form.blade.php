@@ -14,7 +14,6 @@
             <input
                 type="number"
                 name="number"
-                value="{{ $budget->price }}"
                 required
             />
         </div>

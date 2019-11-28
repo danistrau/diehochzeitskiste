@@ -43,6 +43,8 @@ class BudgetController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
+            'price' => 'required',
+
             
         ]);
 
@@ -93,6 +95,7 @@ class BudgetController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
+            'price' => 'required',
         ]);
 
         $budget = Budget::findOrFail($id);
