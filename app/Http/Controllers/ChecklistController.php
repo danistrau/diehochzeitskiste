@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Checklist;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ChecklistController extends Controller
 {
@@ -14,9 +15,7 @@ class ChecklistController extends Controller
      */
     public function index()
     {
-        $checklists = Checklist::all();
-
-        //$checklists = Checklist::with('user_id')->get();
+        $checklists = Checklist::where("user_id", Auth::user()->id)->get();
 
         return view('checklist.index', ['checklists' => $checklists]); 
 

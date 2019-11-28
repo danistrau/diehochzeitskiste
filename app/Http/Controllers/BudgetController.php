@@ -102,56 +102,5 @@ class BudgetController extends Controller
         return redirect()->route('budget.index')->with('success','Budget updated');
     }
 
-    public function list ()
-    {
-
-        $total = 0;
-        foreach ($budgets as $budgets) {
-            $subtotal = $budgets[$budget->id] * $budget->price;
-            $total = $total + $subtotal;
-        }
-        $total = round($total, 2);
-
-        $params = [
-            'budgets' => $budgets,
-            'total' => $total
-        ];
-
-        return view('budget.index', ['budgets' => $budget]); 
-        
-    }
-
-
-
-    public static function budgetCount ()
-    {
-        $budgetCount = 0;
-
-        if (isset($budget)) {
-            foreach ($budget as $amount) {
-                $budgetCount = $budgetCount + $amount;
-            }
-        }
-        return view('budget.index', ['budgets' => $budget]); 
-
-    }
-
-    public function incrementBudget ($id) {
-        $id = (int)$id;
-
-        $budget = new Budget();
-        $budget->addBudget($id, 1);
-
-        return view('budget.index', ['budgets' => $budget]); 
-    }
-
-    public function decrementBudget ($id) {
-        $id = (int)$id;
-
-        $budget = new Budget();
-        $budget->removeBudget($id, 1); 
-
-        return view('budget.index', ['budgets' => $budget]); 
-    }
      
 }

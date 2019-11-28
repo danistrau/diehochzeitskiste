@@ -248,12 +248,6 @@ h2 {
     z-index: 10;
 }
 
-.budgetrechner {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .inspiration {
     padding: 0;
@@ -272,13 +266,10 @@ h2 {
 }
 
 .budgetrechner div {
-    background-color: #e4dadb;
-    color: #3a3a3a;
-    text-align: center;
-    z-index: -1;
-    height: 110px;
-    align-self: center;
-    width: 530px;
+    border: solid;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: #e6e5e5;
 }
 
 .inspiration div {
