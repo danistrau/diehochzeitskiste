@@ -44,11 +44,12 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
-            'checkbox' => 'required',
+        
             
         ]);
 
         $checklist = new Checklist($request->all());
+        $checklist->checked = isset($request->all()["checked"]);
         $checklist->user_id = auth()->id(); 
         $checklist->save(); 
         
@@ -95,7 +96,7 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
-            'checkbox' => 'required',
+    
         ]);
 
         $checklist = Checklist::findOrFail($id);
