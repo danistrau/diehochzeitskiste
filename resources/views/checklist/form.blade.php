@@ -13,7 +13,7 @@
             <label>Erledigt</label><br/>
             <input
                 type="checkbox"
-                name="checkbox"
+                name="checked"
             />
         </div>
 

@@ -13,8 +13,8 @@
             <label>Preis</label><br/>
             <input
                 type="number"
-                name="number"
-                required
+                name="price"
+                
             />
         </div>
 
