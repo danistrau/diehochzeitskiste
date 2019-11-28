@@ -44,6 +44,7 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
+            'checkbox' => 'required',
             
         ]);
 
@@ -94,6 +95,7 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
+            'checkbox' => 'required',
         ]);
 
         $checklist = Checklist::findOrFail($id);

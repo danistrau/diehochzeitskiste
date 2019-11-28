@@ -13,7 +13,7 @@
             <label>Erledigt</label><br/>
             <input
                 type="checkbox"
-                value="{{ $checklist->checked }}"
+                name="checkbox"
             />
         </div>
 

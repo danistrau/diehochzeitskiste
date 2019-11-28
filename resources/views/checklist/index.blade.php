@@ -21,9 +21,6 @@
                     />
                 </svg>
                 <a href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->title }} </a>
-                @if($checklist->user)
-                <span>: {{ $checklist->user->name }}</span>
-                @endif
                 <span>
                     <a href="{{ route('checklist.show', $checklist->id) }}"></a>
                 </span>
