@@ -14,7 +14,6 @@
             <input
                 type="number"
                 name="price"
-                
             />
         </div>
 

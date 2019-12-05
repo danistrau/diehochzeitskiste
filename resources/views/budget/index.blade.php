@@ -16,13 +16,13 @@
     </section>
     <section class="main-budgetrechner">
         <div class="main-p">
-            <h2 class="subheader">Gesamtbudget: </h2>
+            <span class="subheader">Unser Budget:</span><br/>
             <input
             class="input"
             type="number"
-            name="number"
-            required
-        />
+            name="total_budget"
+        /><br/>
+        <button type="submit">Speichern</button>
         </div>
         <ul class="budgetrechner">
                 @foreach($budgets as $budget)
@@ -31,6 +31,14 @@
             </li>
             @endforeach
         </ul>
+        <div class="main-p">
+            <span class="subheader">Verbleibendes Budget:</span><br/>
+            <input
+            class="input"
+            type="number"
+            name="budget"
+        />
+        </div>
     </section>
 </main>
 @endsection

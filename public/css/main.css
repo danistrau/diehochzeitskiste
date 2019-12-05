@@ -270,7 +270,7 @@ h2 {
     border: solid;
     border-width: 1px 0 0;
     border-style: solid;
-    border-color: #e6e5e5;
+    border-color: #f1e5e6;;
 }
 
 .inspiration div {
@@ -307,6 +307,7 @@ h2 {
 .budgetrechner {
     text-align: center;
     padding: 0;
+    margin-bottom: 50px;
 }
 
 /*
