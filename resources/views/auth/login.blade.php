@@ -47,17 +47,13 @@
                 </div>
             </div>
             <div>
-                <input type="checkbox" name="remember" id="remember"
-                {{ old("remember") ? "checked" : "" }}>
-                <label for="remember">{{ __("Merken") }}</label>
+                <input type="checkbox" name="remember_token" id="remember_token"
+                {{ old("remember_token") ? "checked" : "" }}>
+                <label for="remember_token">{{ __("Merken") }}</label>
             </div>
             <div>
                 <button type="submit">{{ __("Login") }}</button>
-                @if (Route::has('password.request'))
-                <a href="{{ route('password.request') }}">{{
-                    __("Passwort vergessen?")
-                }}</a>
-                @endif
+               
             </div>
         </form>
     </div>

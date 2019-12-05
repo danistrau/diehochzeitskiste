@@ -7,16 +7,15 @@
                     <h1 class="subheader">Willkommen!</h1>
                     <div class="main-text">
                         @if (session('status'))
-                        <div class="alert alert-success" role="alert">
+                        <span class="alert alert-success" role="alert">
                             {{ session("status") }}
-                        </div>
+                        </span>
                         @endif
-                        <h2>Du hast dich erfolgreich eingeloggt.</h2>
                         <section class="main-text">
-                                <section class="main-text">
-                                    <h3>Hochzeitsplanung einfach gemacht</h3>
-                                    <p class="main-p">Die Hochzeitskiste bietet das perfekte Werkzeug, um deine Hochzeit einfach und bequem zu planen</p>
-                              </section>
+                            <h3>Hochzeitsplanung einfach gemacht</h3>
+                            <p class="main-p">Die Hochzeitskiste bietet das perfekte Werkzeug, um deine Hochzeit einfach und bequem zu planen</p>
+                      </section>
+                       
                         <div class="main-form">
                                 <ul class="main-svg">
                                     <li><a class="svglink" href="{{ route('checklist.index') }}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.8 170.1"><g data-name="Ebene 2"><g data-name="Ebene 1"><path d="M101.2 0H0v170.1h146.8V41.4zm1.9 9.7l33.1 30h-33.1zM6.2 164.4V5.7h90.6v39.7h43.7v119.1H6.2z"/><path d="M112.4 59.6h-50a2.81 2.81 0 1 0 0 5.6h50a3 3 0 0 0 3.1-2.8 2.94 2.94 0 0 0-3.1-2.8zm-61.3-7.9l-13.4 9.8-4.3-3.9a3.35 3.35 0 0 0-4.4 0 2.67 2.67 0 0 0 0 4l6.2 5.7a3.45 3.45 0 0 0 4.2.2L55 56.2a2.78 2.78 0 0 0 .5-4 3.25 3.25 0 0 0-4.4-.5zm61.3 39h-50a2.81 2.81 0 1 0 0 5.6h50a3 3 0 0 0 3.1-2.8 2.94 2.94 0 0 0-3.1-2.8zm-61.3-7.8l-13.4 9.8-4.3-3.9a3.35 3.35 0 0 0-4.4 0 2.67 2.67 0 0 0 0 4l6.2 5.7a3.45 3.45 0 0 0 4.2.2L55 87.3a2.78 2.78 0 0 0 .5-4 3.35 3.35 0 0 0-4.4-.4zm61.3 39h-50a3 3 0 0 0-3.1 2.8 2.93 2.93 0 0 0 3.1 2.8h50a3 3 0 0 0 3.1-2.8 2.94 2.94 0 0 0-3.1-2.8zM51.1 114l-13.4 9.8-4.3-3.9a3.35 3.35 0 0 0-4.4 0 2.67 2.67 0 0 0 0 4l6.2 5.7a3.45 3.45 0 0 0 4.2.2L55 118.5a2.78 2.78 0 0 0 .5-4 3.48 3.48 0 0 0-4.4-.5z"/></g></g></svg></a><p>Checkliste</p></li>

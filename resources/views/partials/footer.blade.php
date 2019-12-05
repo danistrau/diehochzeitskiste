@@ -9,7 +9,7 @@
         <div class="footer-text">
             <ul>
             <li><a class="footerlink" href="/contact">Kontakt</a></li>
-            <li><a class="footerlink" href="/überuns">Über Mich</a></li>
+            <li><a class="footerlink" href="/überuns">Über mich</a></li>
             <li><a class="footerlink" href="/datenschutz">Impressum & Datenschutz</a></li>
             </ul>
         </div>      

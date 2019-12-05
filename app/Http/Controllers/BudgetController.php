@@ -44,7 +44,7 @@ class BudgetController extends Controller
 
             'title' => 'required|string|max:255',
             'price' => 'required',
-
+    
             
         ]);
 

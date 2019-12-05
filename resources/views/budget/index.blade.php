@@ -16,7 +16,7 @@
     </section>
     <section class="main-budgetrechner">
         <div class="main-p">
-            <span class="subheader">Unser Budget:</span><br/>
+            <span class="subheader">Gesamtbudget</span><br/>
             <input
             class="input"
             type="number"
@@ -32,11 +32,12 @@
             @endforeach
         </ul>
         <div class="main-p">
-            <span class="subheader">Verbleibendes Budget:</span><br/>
+            <span class="subheader">Verbleibendes Budget</span><br/>
             <input
             class="input"
             type="number"
-            name="budget"
+            name="budget
+            "
         />
         </div>
     </section>
