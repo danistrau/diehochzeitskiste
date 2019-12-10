@@ -311,6 +311,21 @@ h2 {
     margin-bottom: 50px;
 }
 
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia li {
+    width: 5%;
+    margin: 20px;
+}
+
+.socialmedia svg {
+    fill: #3a3a3a;;
+    cursor: pointer;
+}
+
 /*
 FOOTER
 */

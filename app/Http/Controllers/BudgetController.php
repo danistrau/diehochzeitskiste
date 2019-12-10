@@ -26,6 +26,7 @@ class BudgetController extends Controller
         $rest_budget = $total_budget - $price;
         $rest_budget = round($rest_budget, 2);
 
+        //print_r($price);
 
         return view('budget.index', ['budgets' => $budgets, "total_budget" => $total_budget, "rest_budget" => $rest_budget ]); 
 
