@@ -18,14 +18,16 @@ class BudgetController extends Controller
     public function index()
     {
         $budgets = Budget::all();
-        //$budgets = Budget::where("user_id", Auth::user()->id)->get();
+        //$budgets = Budget::where("id", Auth::user()->id)->get();
 
         $total_budget = User::where("id", Auth::id())->first()->total_budget;
-        $price = Budget::where("user_id", Auth::user()->id)->get();
+        $price = Budget::where("id", Auth::id())->first()->price;
 
-        $rest_budget = $total_budget - 20;
+        $rest_budget = $total_budget - $price;
+        $rest_budget = round($rest_budget, 2);
 
-        print_r($total_budget);
+        //$total_budget = ['total_budget' => $budgets];
+
 
         return view('budget.index', ['budgets' => $budgets]); 
 
@@ -44,6 +46,7 @@ class BudgetController extends Controller
         
         return redirect()->route('budget.index')->with('success','Budget created');  
     }
+
 
     /**
      * Store a newly created resource in storage.

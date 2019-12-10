@@ -22,7 +22,7 @@
             class="input"
             type="number"
             name="total_budget"
-            echo $total_budget;
+            value=""
         /><br/>
         <button type="submit">Speichern</button>
         </form>
@@ -39,7 +39,7 @@
             class="input"
             type="number"
             name="budget"
-            echo $rest_budget;
+            value=""
         />
         </div>
     </section>

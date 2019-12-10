@@ -1,6 +1,5 @@
 
 @csrf
-       
         <div>
             <label>Preis</label><br/>
             <input
