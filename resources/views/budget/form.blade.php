@@ -1,14 +1,6 @@
 
 @csrf
-        <div>
-            <label>Title</label><br/>
-            <input
-                type="text"
-                name="title"
-                value="{{ $budget->title }}"
-                required
-            />
-        </div>
+       
         <div>
             <label>Preis</label><br/>
             <input

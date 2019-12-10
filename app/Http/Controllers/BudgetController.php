@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Budget;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class BudgetController extends Controller
 {
@@ -15,21 +18,31 @@ class BudgetController extends Controller
     public function index()
     {
         $budgets = Budget::all();
+        //$budgets = Budget::where("user_id", Auth::user()->id)->get();
+
+        $total_budget = User::where("id", Auth::id())->first()->total_budget;
+        $price = Budget::where("user_id", Auth::user()->id)->get();
+
+        $rest_budget = $total_budget - 20;
+
+        print_r($total_budget);
 
         return view('budget.index', ['budgets' => $budgets]); 
 
     }
 
-    /**
-     * Show the form for creating a new resource
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function mainstore(Request $request)
     {
-        $budget = new Budget;
+        $this->validate($request, [
 
-        return view('budget.create', ['budget' => $budget]);
+            'total_budget' => 'required',
+        ]);
+           
+        $users = Auth::user();
+        $users->total_budget = request('total_budget'); 
+        $users->save(); 
+        
+        return redirect()->route('budget.index')->with('success','Budget created');  
     }
 
     /**
@@ -42,18 +55,15 @@ class BudgetController extends Controller
     {
         $this->validate($request, [
 
-            'title' => 'required|string|max:255',
             'price' => 'required',
-    
             
         ]);
-
+    
         $budget = new Budget($request->all());
         $budget->user_id = auth()->id(); 
         $budget->save(); 
         
         return redirect()->route('budget.index')->with('success','Budget created'); 
-        
     }
 
     /**
@@ -79,8 +89,7 @@ class BudgetController extends Controller
     {
         $budget = Budget::findOrFail($id);
 
-        return view('budget.edit', ['budget' => $budget]); 
-            
+        return view('budget.edit', ['budget' => $budget]);    
     }
 
     /**
@@ -94,8 +103,8 @@ class BudgetController extends Controller
     {
         $this->validate($request, [
 
-            'title' => 'required|string|max:255',
             'price' => 'required',
+        
         ]);
 
         $budget = Budget::findOrFail($id);
@@ -104,6 +113,8 @@ class BudgetController extends Controller
         
         return redirect()->route('budget.index')->with('success','Budget updated');
     }
+
+ 
 
      
 }

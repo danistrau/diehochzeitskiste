@@ -15,15 +15,17 @@
         </div>
     </section>
     <section class="main-budgetrechner">
-        <div class="main-p">
+        <form method="post" class="main-p" action="{{action('BudgetController@mainstore')}}">
+            @csrf
             <span class="subheader">Gesamtbudget</span><br/>
             <input
             class="input"
             type="number"
             name="total_budget"
+            echo $total_budget;
         /><br/>
         <button type="submit">Speichern</button>
-        </div>
+        </form>
         <ul class="budgetrechner">
                 @foreach($budgets as $budget)
             <li>
@@ -36,8 +38,8 @@
             <input
             class="input"
             type="number"
-            name="budget
-            "
+            name="budget"
+            echo $rest_budget;
         />
         </div>
     </section>

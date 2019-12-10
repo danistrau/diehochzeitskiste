@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
 
+
 class UserController extends Controller
 {
    
@@ -20,7 +21,7 @@ class UserController extends Controller
 
             'total_budget' => 'required',
         ]);
-
+            print_r('lblb');
         $user = new User;
         $user->user_id = auth()->id(); 
         $user->total_budget = request('total_budget'); 

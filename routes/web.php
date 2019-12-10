@@ -68,6 +68,7 @@ Route::middleware('auth')->name('budget.')->prefix('budget')->group(function() {
     Route::get('', 'BudgetController@index')->name('index');
     Route::get('/create', 'BudgetController@create')->name('create');
     Route::post('', 'BudgetController@store')->name('store');
+    Route::post('', 'BudgetController@mainstore');
     Route::get('/{id}', 'BudgetController@show')->name('show'); 
     Route::get('/{id}/edit', 'BudgetController@edit')->name('edit');
     Route::put('/{id}', 'BudgetController@update')->name('update');
