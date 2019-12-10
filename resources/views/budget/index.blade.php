@@ -22,7 +22,7 @@
             class="input"
             type="number"
             name="total_budget"
-            value=""
+            value="{{ $total_budget }}"
         /><br/>
         <button type="submit">Speichern</button>
         </form>
@@ -39,7 +39,7 @@
             class="input"
             type="number"
             name="budget"
-            value=""
+            value="{{ $rest_budget }}"
         />
         </div>
     </section>
