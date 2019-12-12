@@ -95,6 +95,7 @@ nav ul {
 main {
     max-width: 1200px;
     margin: 0 auto;
+    height: 105vh;
 }
 
 h1 {

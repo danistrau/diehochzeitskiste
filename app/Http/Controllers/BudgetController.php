@@ -21,12 +21,14 @@ class BudgetController extends Controller
         //$budgets = Budget::where("id", Auth::user()->id)->get();
 
         $total_budget = User::where("id", Auth::id())->first()->total_budget;
-        $price = Budget::where("id", Auth::id())->first()->price;
 
-        $rest_budget = $total_budget - $price;
+        foreach($budgets as $budget) { 
+
+            $price = $budget->price;
+            $rest_budget = $total_budget - $price;
+            //dump($rest_budget);
+        } 
         $rest_budget = round($rest_budget, 2);
-
-        //print_r($price);
 
         return view('budget.index', ['budgets' => $budgets, "total_budget" => $total_budget, "rest_budget" => $rest_budget ]); 
 
