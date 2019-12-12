@@ -1,5 +1,7 @@
+@font-face { font-family: 'myfont'; src:  url('../font/always\ forever.ttf') format('truetype'); }
+
 body {
-    font-family: helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     max-width: 1900px;
     margin: 0 auto;
@@ -98,8 +100,9 @@ main {
 }
 
 h1 {
+    font-family: myfont;
     color: #e4dadb;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .subheader {
@@ -217,7 +220,15 @@ form {
 
 h2 {
     align-self: center;
+    font-family: myfont;
+    font-size: 50px;
 }
+
+h3 {
+    font-family: myfont;
+    font-size: 50px;
+}
+
 .main-text {
     text-align: center;
     margin-top: 80px;
@@ -244,7 +255,7 @@ h2 {
 }
 
 .inspiration img {
-    padding: 70px 0;
+    padding: 80px 0;
 }
 
 .change:hover {
@@ -291,14 +302,13 @@ h2 {
     justify-content: space-between;
 }
 
-.aboutme img {
-    width: 45%;
-    flex-basis: 45%;
+.aboutme p {
+    border: solid 4px #f1e5e6;
+    padding: 25px;
+    margin: 15px;
+    align-self: center;
 }
 
-.aboutme p {
-    flex-basis: 50%;
-}
 
 .budget {
     flex-basis: 50%;

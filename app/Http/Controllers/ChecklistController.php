@@ -101,6 +101,7 @@ class ChecklistController extends Controller
 
         $checklist = Checklist::findOrFail($id);
         $checklist->fill($request->all());
+        $checklist->checked = $request->has('checked') ? 1 : 0;
         $checklist->save(); 
         
         return redirect()->route('checklist.index')->with('success','Checklist updated');
