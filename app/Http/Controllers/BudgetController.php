@@ -29,11 +29,11 @@ class BudgetController extends Controller
             $amount += $price;
             
         } 
+
         $rest_budget = $total_budget - $amount;
         $rest_budget = round($rest_budget, 2);
 
         return view('budget.index', ['budgets' => $budgets, "total_budget" => $total_budget, "rest_budget" => $rest_budget ]); 
-
     }
 
     public function mainstore(Request $request)
