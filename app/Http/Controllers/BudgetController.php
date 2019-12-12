@@ -18,16 +18,18 @@ class BudgetController extends Controller
     public function index()
     {
         $budgets = Budget::all();
-        //$budgets = Budget::where("id", Auth::user()->id)->get();
+        //$budgets = Budget::where("user_id", Auth::user()->id)->get();
 
         $total_budget = User::where("id", Auth::id())->first()->total_budget;
+        $amount = 0;
 
         foreach($budgets as $budget) { 
-
+            
             $price = $budget->price;
-            $rest_budget = $total_budget - $price;
-            //dump($rest_budget);
+            $amount += $price;
+            
         } 
+        $rest_budget = $total_budget - $amount;
         $rest_budget = round($rest_budget, 2);
 
         return view('budget.index', ['budgets' => $budgets, "total_budget" => $total_budget, "rest_budget" => $rest_budget ]); 
