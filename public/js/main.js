@@ -45,5 +45,21 @@ function stickyNavigation() {
   }
 }
 
+/* 
+Checkbox 
+ */
+
+function checkbox() {
+  var checkBox = document.getElementById("checked");
+  var check = document.getElementById("check");
+  if (checkBox.checked == true){
+    check.style.display = "block";
+  } else {
+     check.style.display = "none";
+  }
+}
+
+
+
 
 });

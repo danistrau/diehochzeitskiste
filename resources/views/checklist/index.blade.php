@@ -22,7 +22,7 @@
                 </svg>
                 <a href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->title }} - </a>
                 <span>
-                    <a href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->checked }}</a>
+                    <a id ="check" style="display:none" href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->checked }}</a>
                 </span>
             </li>
             @endforeach

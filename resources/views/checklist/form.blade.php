@@ -13,7 +13,9 @@
             <label>Erledigt</label><br/>
             <input
                 type="checkbox"
+                id="checked"
                 name="checked"
+                onClick= "checkbox()"
             />
         </div>
 

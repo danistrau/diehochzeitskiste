@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBudgetTable extends Migration
+class CreateUsersBudgetTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateBudgetTable extends Migration
      */
     public function up()
     {
-        Schema::create('budget', function (Blueprint $table) {
+        Schema::create('users_budget', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('budget_id')->nullable();
+            $table->integer('price');
             
-           
         });
     }
 
@@ -28,6 +29,6 @@ class CreateBudgetTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('budget');
+        Schema::dropIfExists('users_budget');
     }
 }
