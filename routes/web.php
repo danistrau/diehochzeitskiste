@@ -76,5 +76,20 @@ Route::middleware('auth')->name('budget.')->prefix('budget')->group(function() {
 
 });
 
+Route::middleware('auth')->name('usersbudget.')->prefix('usersbudget')->group(function() {
+
+    Route::get('', 'UsersBudgetController@index')->name('index');
+    Route::get('/create', 'UsersBudgetController@create')->name('create');
+    Route::post('', 'UsersBudgetController@store')->name('store');
+    Route::post('', 'UsersBudgetController@mainstore');
+    Route::get('/{id}', 'UsersBudgetController@show')->name('show'); 
+    Route::get('/{id}/edit', 'UsersBudgetController@edit')->name('edit');
+    Route::put('/{id}', 'UsersBudgetController@update')->name('update');
+    Route::delete('/{id}', 'UsersBudgetController@destroy')->name('destroy');
+
+});
+
+
+
 
 

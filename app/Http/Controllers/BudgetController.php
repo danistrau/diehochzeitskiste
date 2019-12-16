@@ -18,7 +18,6 @@ class BudgetController extends Controller
     public function index()
     {
         $budgets = Budget::all();
-        //$budgets = Budget::where("user_id", Auth::user()->id)->get();
 
         $total_budget = User::where("id", Auth::id())->first()->total_budget;
         $amount = 0;
