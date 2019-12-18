@@ -6,6 +6,7 @@
             <li class="nav_content"><a  href="{{ route('checklist.index') }}">Checkliste</a></li>
             <li class="nav_content"><a  href="/budget">Budget</a></li>
             <li class="nav_content"><a href="/inspiriation">Inspiriation</a></li>
+            <li class="nav_content"><a href="/blogs">Blog</a></li>
         </ul>
 
         <ul class="navbar-nav">
