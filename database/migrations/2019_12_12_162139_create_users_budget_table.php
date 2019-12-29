@@ -13,11 +13,11 @@ class CreateUsersBudgetTable extends Migration
      */
     public function up()
     {
-        Schema::create('users_budget', function (Blueprint $table) {
+        Schema::create('users_budgets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('budget_id')->nullable();
-            $table->integer('price');
+            $table->float('price');
             
         });
     }
@@ -29,6 +29,6 @@ class CreateUsersBudgetTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users_budget');
+        Schema::dropIfExists('users_budgets');
     }
 }

@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class UsersBudgets extends Model
 {
-    protected $fillable = ['user_id', 'budget_id','price'];
 
     public function user()
     {

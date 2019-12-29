@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->integer('total_budget')->nullable();;
             $table->rememberToken();
             $table->timestamps();
+            $table->boolean('is_admin')->default(false);
         });
     }
 

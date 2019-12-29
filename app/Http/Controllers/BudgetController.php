@@ -84,18 +84,7 @@ class BudgetController extends Controller
         return view('budget.show', ['budget' => $budget]); 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Checklist  $checklist
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        $budget = Budget::findOrFail($id);
-
-        return view('budget.edit', ['budget' => $budget]);    
-    }
+  
 
     /**
      * Update the specified resource in storage.

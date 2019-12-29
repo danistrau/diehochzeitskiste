@@ -13,10 +13,10 @@ class CreateBudgetTable extends Migration
      */
     public function up()
     {
-        Schema::create('budget', function (Blueprint $table) {
+        Schema::create('budgets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            
+            $table->timestamps();
            
         });
     }
@@ -28,6 +28,6 @@ class CreateBudgetTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('budget');
+        Schema::dropIfExists('budgets');
     }
 }

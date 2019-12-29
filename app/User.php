@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use App\UsersBudgets;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
@@ -52,8 +51,8 @@ class User extends Authenticatable
     {
     return $this->hasMany(Budget::class);
     }
-    public function userbudget()
+    public function usersBudgets()
     {
-    return $this->hasMany(UserBudgets::class);
+    return $this->hasMany(UsersBudgets::class);
     }
 }

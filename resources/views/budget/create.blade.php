@@ -5,7 +5,7 @@
 			<div class="main">
 				<div class="main-p">
 					<h1 class="subheader">Budget hinzufügen</h1>
-					<form action="{{route('UsersBudgetController@store')}}" method="post" autocomplete="off">
+					<form action="{{route('usersbudget.store')}}" method="post" autocomplete="off">
 
 					 @include('budget.form')
 				</div>

@@ -20,7 +20,7 @@
                         d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 00-1.249 1.562l10 8a.999.999 0 001.373-.117l16-18a1 1 0 10-1.496-1.328z"
                     />
                 </svg>
-                <a href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->title }} - </a>
+                <a href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->title }}</a>
                 <span>
                     <a id ="check" style="display:none" href="{{ route('checklist.show', $checklist->id) }}">{{ $checklist->checked }}</a>
                 </span>

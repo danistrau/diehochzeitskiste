@@ -18,7 +18,11 @@
 
 				<span>
 					<a href="{{ route('budget.index') }}"><button type="submit">Zurück</button></a>
+					@if($budget->hasUserBudget)
 					<a href="{{ route('budget.edit', $budget->id) }}"><button type="submit">Bearbeiten</button></a>
+					@else
+					<a href="{{ route('budget.create', $budget->id) }}"><button type="submit">Erstellen</button></a>
+					@endif
 				</span>
 		</div>
 	</div>
