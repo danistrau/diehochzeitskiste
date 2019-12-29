@@ -18,13 +18,13 @@
 			@foreach($blogs as $blog)
 
 				<div >
-					<h2>{{ $blog->title }}</h2>
+					<h2>Thema: {{ $blog->title }}</h2>
 					<span>{{ $blog->short_text }}</span>
 					@if($blog->user)
-						<span>User: {{ $blog->user->name }}</span>
+						<span>Erstellt von: {{ $blog->user->name }}</span>
 					@endif
 					<span>
-						<a href="{{ route('blogs.show', $blog->id) }}" >Anzeigen</a>
+						<a href="{{ route('blogs.show', $blog->id) }}">Anzeigen</a>
 					</span>
 				</div>
 

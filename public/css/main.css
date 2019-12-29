@@ -71,10 +71,6 @@ svg:hover {
     margin: 0 20px;
 }
 
-.burger_icon {
-    display: none;
-}
-
 nav ul {
     display: flex;
     align-items: center;
@@ -88,6 +84,48 @@ nav ul {
     width: 100%;
     background-color: #f1e5e6;
     transition: height 0.3s ease-in-out;
+}
+
+.nav-mobile{
+    font-size: 40px;
+    flex-direction: column;
+}
+
+.mobile-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding-top: 150px;
+    display:none;
+}
+
+.mobile-content {
+    padding: 20px;
+}
+
+.display {
+    display: block;
+}
+
+#burger{
+    z-index:30;
+}
+
+@media only screen and (min-width:320px) and (max-width:700px){
+    .navbar-nav{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .menu{
+        display:none;
+    }
 }
 
 /* 
@@ -353,7 +391,7 @@ footer {
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -381,4 +419,16 @@ footer {
 
 .footerlogo {
     width: 50%;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .footer{
+        display: inline;
+        text-align: center;
+    }
+
+    .footer-text ul{
+       display: inline-flex;
+    }
+    
 }

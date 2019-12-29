@@ -3,6 +3,7 @@
 @section('container')
 	<div class="main">
 		<div class="main-p">
+			
 				@if($budget->is_published)
 					<i class="fa fa-check text-success"></i>
 				@else

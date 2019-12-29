@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Budget;
-use App\User;
 use App\UsersBudget;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +17,7 @@ class UsersBudgetController extends Controller
      */
     public function index()
     {
-       $usersbudget = Budget::where("user_id", Auth::user()->id)->get();
+       $usersbudget = UsersBudget::where("user_id", Auth::user()->id)->get();
 
        return view('budget.index', ['usersbudget' => $usersbudget]); 
 

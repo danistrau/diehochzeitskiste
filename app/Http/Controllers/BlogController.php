@@ -62,11 +62,12 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $id)
-    {
-        $blog = Blog::findOrFail($id);
+    public function show(Blog $blog)
 
-        return view('blogs.show', ['blog' => $blog]);
+    {
+
+
+        return view('blogs.show', compact('blog'));
     }
 
     /**
@@ -75,9 +76,8 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $id)
+    public function edit(Blog $blog)
     {
-        $blog = Blog::findOrFail($id);
 
         return view('blogs.edit', compact('blog'));
     }
@@ -89,7 +89,7 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $id)
+    public function update(Request $request, Blog $blog)
     {
         $this->validate($request, [
 
@@ -97,7 +97,6 @@ class BlogController extends Controller
             'text' => 'required|string|between:2,140',
         ]);
 
-        $blog = Blog::findOrFail($id);
         $blog->fill($request->all());
         $blog->is_published = $request->has('is_published');
         $blog->save();
@@ -111,9 +110,9 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $id)
+    public function destroy(Blog $blog)
     {
-        $blog = Blog::findOrFail($id);
+       
         $blog->delete();
 
         return redirect()->route('blogs.index')->with('success', 'Blog deleted!');

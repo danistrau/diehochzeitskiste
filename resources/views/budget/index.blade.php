@@ -29,7 +29,7 @@
         <ul class="budgetrechner">
                 @foreach($budgets as $budget)
             <li>
-                <a href="{{ route('budget.show', $budget->id) }}"><div class="change"><h2>{{ $budget->title }}</h2><p>
+                <a  href="{{ route('budget.show', $budget->id) }}"><div class="change"><h2>{{ $budget->title }}</h2><p>
                     <input
                     type="number"
                     name="price"

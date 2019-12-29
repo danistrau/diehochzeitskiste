@@ -45,19 +45,22 @@ function stickyNavigation() {
   }
 }
 
+ /* 
+    BURGER
+    */
+
+   var burger = document.querySelector('.menu');
+
+   burger.addEventListener('click', function(){
+       burger.classList.toggle('open');
+       document.querySelector('.mobile-container').classList.toggle('display');
+   });
+
+  
+
 /* 
 Checkbox 
  */
-
-function checkbox() {
-  var checkBox = document.getElementById("checked");
-  var check = document.getElementById("check");
-  if (checkBox.checked == true){
-    check.style.display = "block";
-  } else {
-     check.style.display = "none";
-  }
-}
 
 
 

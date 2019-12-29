@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\UsersBudgets;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 
 class User extends Authenticatable
 {
@@ -37,18 +38,22 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function admin()
-    {
-        return $this->hasOne(Admin::class, 'user_id', 'id');
-    }
+
 
     public function checklist()
     {
     return $this->hasMany(Checklist::class);
     }
-
+    public function blog()
+    {
+    return $this->hasMany(Blog::class);
+    }
     public function budget()
     {
     return $this->hasMany(Budget::class);
+    }
+    public function userbudget()
+    {
+    return $this->hasMany(UserBudgets::class);
     }
 }
