@@ -80,8 +80,8 @@ Route::middleware('auth')->name('usersbudget.')->prefix('usersbudget')->group(fu
 
     Route::post('', 'UsersBudgetController@store')->name('store');
     Route::put('/{usersBudgets}', 'UsersBudgetController@update')->name('update');
-    Route::get('/{usersBudgets}', 'UsersBudgetController@edit')->name('edit');
-    Route::get('/{usersBudgets}', 'UsersBudgetController@create')->name('create');
+    Route::get('/{usersBudgets}/edit', 'UsersBudgetController@edit')->name('edit');
+    Route::get('/create/{budget}', 'UsersBudgetController@create')->name('create');
 
 
 });

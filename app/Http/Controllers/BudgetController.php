@@ -60,8 +60,7 @@ class BudgetController extends Controller
     {
         $this->validate($request, [
 
-            'price' => 'required',
-            
+            'price' => 'required',   
         ]);
     
         $budget = new Budget($request->all());
@@ -84,7 +83,6 @@ class BudgetController extends Controller
         return view('budget.show', ['budget' => $budget]); 
     }
 
-  
 
     /**
      * Update the specified resource in storage.

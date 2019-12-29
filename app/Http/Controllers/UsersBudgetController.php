@@ -56,7 +56,7 @@ class UsersBudgetController extends Controller
     public function edit(UsersBudgets $usersBudgets)
     {
       
-        return view('budget.edit', ['budget' => $budget]);    
+        return view('usersBudget.edit', ['usersBudgets' => $usersBudgets]);    
     }
 
       /**
@@ -65,10 +65,10 @@ class UsersBudgetController extends Controller
      * @param  \App\Checklist  $checklist
      * @return \Illuminate\Http\Response
      */
-    public function create($budget)
+    public function create(Budget $budget)
     {
       
-        return view('budget.edit', ['budget' => $budget]);    
+        return view('usersBudget.edit', ['budget' => $budget]);    
     }
 
 
