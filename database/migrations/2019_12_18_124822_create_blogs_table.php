@@ -17,6 +17,7 @@ class CreateBlogsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text('text');
+            $table->boolean('is_published')->default(false);
             $table->timestamps();
         });
     }

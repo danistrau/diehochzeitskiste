@@ -18,6 +18,7 @@ class CreateUsersBudgetTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('budget_id')->nullable();
             $table->float('price');
+            $table->timestamps();
             
         });
     }

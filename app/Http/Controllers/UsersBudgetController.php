@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Budget;
 use App\Http\Requests\StoreBudgetRequest;
-use App\UsersBudget;
 use App\UsersBudgets;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -22,7 +21,7 @@ class UsersBudgetController extends Controller
     public function store (StoreBudgetRequest $request)
     {
        
-        $usersbudget = new UsersBudgets($request->all());
+        $usersbudget = new UsersBudgets($request->only(['price', 'budget_id']));
         $usersbudget->user_id = auth()->id(); 
         $usersbudget->save(); 
         
@@ -68,10 +67,7 @@ class UsersBudgetController extends Controller
     public function create(Budget $budget)
     {
       
-        return view('usersBudget.edit', ['budget' => $budget]);    
+        return view('usersBudget.create', ['budget' => $budget]);    
     }
 
-
-
-  
 }

@@ -55,4 +55,14 @@ class User extends Authenticatable
     {
     return $this->hasMany(UsersBudgets::class);
     }
+
+    public function usedBudgetAttribute(){
+        $budgets = Budget::all();
+        $amount = 0;
+
+        foreach($budgets as $budget) { 
+            $amount += $budget->price;
+        } 
+        return $amount;
+    }
 }

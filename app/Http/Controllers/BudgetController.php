@@ -17,22 +17,15 @@ class BudgetController extends Controller
      */
     public function index()
     {
-        $budgets = Budget::all();
-
-        $total_budget = User::where("id", Auth::id())->first()->total_budget;
-        $amount = 0;
-
-        foreach($budgets as $budget) { 
-            
-            $price = $budget->price;
-            $amount += $price;
-            
-        } 
-
-        $rest_budget = $total_budget - $amount;
+        $user = Auth::user();
+        $rest_budget = $user->total_budget - $user->user_budget;
         $rest_budget = round($rest_budget, 2);
-
-        return view('budget.index', ['budgets' => $budgets, "total_budget" => $total_budget, "rest_budget" => $rest_budget ]); 
+        //dd($user->usersBudgets);
+        return view('budget.index', [
+            'budgets' => Budget::all(), 
+            "total_budget" => $user->total_budget, 
+            "rest_budget" => $rest_budget 
+            ]); 
     }
 
     public function mainstore(Request $request)

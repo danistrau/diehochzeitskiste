@@ -33,7 +33,7 @@
                     <input
                     type="number"
                     name="price"
-                    value="{{ $budget->price }}"
+                    value="{{ $budget->getUserBudget() }}"
                 /></p></div></a>
             </li>
             @endforeach

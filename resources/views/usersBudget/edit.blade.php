@@ -9,6 +9,7 @@
 					
 					@method('put')
 					@include('budget.form')
+					</form>
 				</div>
 			</div>
 		</section>
