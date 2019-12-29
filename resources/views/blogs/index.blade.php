@@ -3,35 +3,25 @@
     <section class="main-head">
         <div class="main">
             <div>
-                <h1 class="subheader">Blog</h1>
-                
+                <h1 class="subheader">Blog's</h1>
             </div>
         </div>
     </section>
     <section class="main-text">
-			<h2>{{ trans_choice('blogs.name', $blogs->total()) }}</h2>
-			
 			<a href="{{ route('blogs.create') }}" class="btn btn-primary mb-4">
-				<i class="fa fa-plus"></i> Neuen Blog erstellen
+				<button class="fa fa-plus">Neuen Blog erstellen</button>
 			</a>
-
 			@foreach($blogs as $blog)
-
-				<div >
-					<h2>Thema: {{ $blog->title }}</h2>
-					<span>{{ $blog->short_text }}</span>
+				<div class="checklist">
+					<h4>{{ $blog->title }}</h4>
 					@if($blog->user)
-						<span>Erstellt von: {{ $blog->user->name }}</span>
+						<span>Author: {{ $blog->user->name }}</span><br/>
 					@endif
 					<span>
 						<a href="{{ route('blogs.show', $blog->id) }}">Anzeigen</a>
 					</span>
 				</div>
-
 			@endforeach
-
-			{{ $blogs->links() }}
-    
     </section>
 </main>
 @endsection

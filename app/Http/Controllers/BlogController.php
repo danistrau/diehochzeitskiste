@@ -16,7 +16,6 @@ class BlogController extends Controller
     {
         $blogs = Blog::with('user')->paginate(10);
 
-      
         return view('blogs.index', compact('blogs'));
     }
 
@@ -65,8 +64,6 @@ class BlogController extends Controller
     public function show(Blog $blog)
 
     {
-
-
         return view('blogs.show', compact('blog'));
     }
 
@@ -78,7 +75,6 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-
         return view('blogs.edit', compact('blog'));
     }
 
@@ -112,7 +108,6 @@ class BlogController extends Controller
      */
     public function destroy(Blog $blog)
     {
-       
         $blog->delete();
 
         return redirect()->route('blogs.index')->with('success', 'Blog deleted!');

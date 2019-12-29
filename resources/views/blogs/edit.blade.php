@@ -4,8 +4,8 @@
 
 @section('container')
 
-	<div class="row justify-content-center">
-		<div class="col-6">
+	<div class="main">
+		<div class="main-text">
 
 			<div class="card card-body">
 

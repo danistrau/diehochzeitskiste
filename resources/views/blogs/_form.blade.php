@@ -17,4 +17,4 @@
 </div>
 
 <button type="submit" >Speichern</button>
-<a href="{{ route('blogs.index') }}" class="btn btn-outline-primary">Zurück</a>
+<a href="{{ route('blogs.index') }}" class="btn btn-outline-primary"><button type="submit" >Zurück</button></a>
