@@ -20,7 +20,7 @@ class BudgetController extends Controller
         $user = Auth::user();
         $rest_budget = $user->total_budget - $user->user_budget;
         $rest_budget = round($rest_budget, 2);
-        //dd($user->usersBudgets);
+        //dd($budget->getUserBudget()->price);
         return view('budget.index', [
             'budgets' => Budget::all(), 
             "total_budget" => $user->total_budget, 

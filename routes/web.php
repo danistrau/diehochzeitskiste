@@ -51,6 +51,12 @@ Route::get('/freien', function () {
     return view('freien');
 });
 
+Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
+
+    Route::get('', 'AdminController@index')->name('index');
+
+});
+
 Route::middleware('auth')->name('checklist.')->prefix('checklist')->group(function() {
 
     Route::get('', 'ChecklistController@index')->name('index');

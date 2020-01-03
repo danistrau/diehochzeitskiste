@@ -18,6 +18,7 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->text('text');
             $table->boolean('is_published')->default(false);
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
         });
     }

@@ -13,7 +13,7 @@
 			</a>
 			@foreach($blogs as $blog)
 				<div class="checklist">
-					<h4>{{ $blog->title }}</h4>
+					<h2>{{ $blog->title }}</h2>
 					@if($blog->user)
 						<span>Author: {{ $blog->user->name }}</span><br/>
 					@endif

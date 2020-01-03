@@ -8,6 +8,7 @@
 					<form action="{{ route('checklist.store') }}" method="post" autocomplete="off">
 
 					 @include('checklist.form')
+					</form>
 				</div>
 			</div>
 		</section>
