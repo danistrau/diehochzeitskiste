@@ -5,6 +5,7 @@
             <div class="main-p">
                 <h1 class="subheader">Budget hinzufügen</h1>
                 <form
+                    class="form" 
                     action="{{ route('usersbudget.store') }}"
                     method="post"
                     autocomplete="off"

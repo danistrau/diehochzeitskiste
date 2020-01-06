@@ -3,7 +3,7 @@
     <section class="main">
         <div class="main-form">
             <h2>Login</h2>
-            <form id="form" method="POST" action="{{ route('login') }}">
+            <form class="form" id="form" method="POST" action="{{ route('login') }}">
                 @csrf
                 <div>
                     <label for="email">{{ __("E-Mail Addresse") }}</label>

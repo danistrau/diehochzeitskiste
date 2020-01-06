@@ -6,6 +6,7 @@
             <h1>Neuen Blog erstellen:</h1>
 
             <form
+                class="form" 
                 action="{{ route('blogs.store') }}"
                 method="post"
                 autocomplete="off"

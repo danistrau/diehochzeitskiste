@@ -5,6 +5,7 @@
             <div>
                 <h1 class="subheader">Die Checkliste bearbeiten</h1>
                 <form
+                    class="form" 
                     action="{{ route('checklist.update', $checklist->id) }}"
                     method="post"
                     autocomplete="off"

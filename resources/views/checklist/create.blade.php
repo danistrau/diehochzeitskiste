@@ -5,6 +5,7 @@
             <div class="main-p">
                 <h1 class="subheader">Eine neue Checkliste hinzufügen</h1>
                 <form
+                    class="form" 
                     action="{{ route('checklist.store') }}"
                     method="post"
                     autocomplete="off"

@@ -1,5 +1,5 @@
 @extends('layouts.master') @section('container')
-<main>
+<main class="blog">
     <section class="main-head">
         <div class="main">
             <div>
@@ -12,7 +12,7 @@
             <button class="fa fa-plus">Neuen Blog erstellen</button>
         </a>
         @foreach($blogs as $blog)
-        <div class="checklist">
+        <div class="blog_text">
             <h2>{{ $blog->title }}</h2>
             @if($blog->user)
             <span>Author: {{ $blog->user->name }}</span

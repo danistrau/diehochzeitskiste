@@ -3,7 +3,7 @@
     <section class="main">
         <div class="main-form">
             <h2>Registrierung</h2>
-            <form method="POST" action="{{ route('register') }}">
+            <form class="form" method="POST" action="{{ route('register') }}">
                 @csrf
 
                 <div>

@@ -6,6 +6,7 @@
             <h1>Blog bearbeiten:</h1>
 
             <form
+                class="form" 
                 action="{{ route('blogs.update', $blog->id) }}"
                 method="post"
                 autocomplete="off"
