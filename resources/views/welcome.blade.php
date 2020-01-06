@@ -15,7 +15,6 @@
         </div>
       </section>
       <section class="main-text">
-          <section class="main-text">
               <h3>Hochzeitsplanung einfach gemacht</h3>
               <p class="main-p">Die Hochzeitskiste bietet das perfekte Werkzeug, um deine Hochzeit einfach und bequem zu planen</p>
         </section>
@@ -29,12 +28,10 @@
         </div>
       </section>
       <section class="main-text">
-        <section class="main-text">
         <h3>Was erwartet dich?</h3>
         <p>Hochzeitsplanung leicht gemacht - mit dem Online Hochzeitsplaner steht Eurer Traumhochzeit nichts mehr im Weg! Wir unterstützen Euch bei der Budgetplanung mit einer Checkliste und bieten verschiedene Inspirationen.</p>
       </section>
     </main> 
-            </div>
-        </div>
+  
 @stop
 

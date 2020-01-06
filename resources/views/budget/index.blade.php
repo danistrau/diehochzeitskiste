@@ -15,37 +15,42 @@
         </div>
     </section>
     <section class="main-budgetrechner">
-        <form method="post" class="main-p" action="{{action('BudgetController@mainstore')}}">
+        <form
+            method="post"
+            class="main-p"
+            action="{{ action('BudgetController@mainstore') }}"
+        >
             @csrf
-            <span class="subheader">Gesamtbudget</span><br/>
+            <span class="subheader">Gesamtbudget</span><br />
             <input
-            class="input"
-            type="number"
-            name="total_budget"
-            value="{{ $total_budget }}"
-        /><br/>
-        <button type="submit">Speichern</button>
+                class="input"
+                type="number"
+                name="total_budget"
+                value="{{ $total_budget }}"
+            /><br />
+            <button type="submit">Speichern</button>
         </form>
         <ul class="budgetrechner">
-                @foreach($budgets as $budget)
+            @foreach($budgets as $budget)
             <li>
-                <a  href="{{ route('budget.show', $budget->id) }}"><div class="change"><h2>{{ $budget->title }}</h2><p>
-                    <input
-                    type="number"
-                    name="price"
-                    value=""
-                /></p></div></a>
+                <a href="{{ route('budget.show', $budget->id) }}"
+                    ><div class="change">
+                        <h2>{{ $budget->title }}</h2>
+                        <p>
+                            <input type="number" name="price" value="" />
+                        </p></div
+                ></a>
             </li>
             @endforeach
         </ul>
         <div class="main-p">
-            <span class="subheader">Verbleibendes Budget</span><br/>
+            <span class="subheader">Verbleibendes Budget</span><br />
             <input
-            class="input"
-            type="number"
-            name="budget"
-            value="{{ $rest_budget }}"
-        />
+                class="input"
+                type="number"
+                name="budget"
+                value="{{ $rest_budget }}"
+            />
         </div>
     </section>
 </main>

@@ -23,10 +23,6 @@ Route::get('/inspiriation', function () {
     return view('inspiriation');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-
 Route::get('/überuns', function () {
     return view('überuns');
 });

@@ -1,4 +1,7 @@
-@font-face { font-family: 'myfont'; src:  url('../font/always\ forever.ttf') format('truetype'); }
+@font-face {
+    font-family: "myfont";
+    src: url("../font/always\ forever.ttf") format("truetype");
+}
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -86,22 +89,22 @@ nav ul {
     transition: height 0.3s ease-in-out;
 }
 
-.nav-mobile{
+.nav-mobile {
     font-size: 40px;
     flex-direction: column;
 }
 
-.mobile-container{
+.mobile-container {
     position: fixed;
     height: 100%;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
     padding-top: 150px;
-    display:none;
+    display: none;
 }
 
 .mobile-content {
@@ -112,19 +115,19 @@ nav ul {
     display: block;
 }
 
-#burger{
-    z-index:30;
+#burger {
+    z-index: 30;
 }
 
-@media only screen and (min-width:320px) and (max-width:700px){
-    .navbar-nav{
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    .navbar-nav {
         display: none;
     }
 }
 
-@media only screen and (min-width:700px){
-    .menu{
-        display:none;
+@media only screen and (min-width: 700px) {
+    .menu {
+        display: none;
     }
 }
 
@@ -135,7 +138,6 @@ nav ul {
 main {
     max-width: 1200px;
     margin: 0 auto;
-   
 }
 
 h1 {
@@ -204,11 +206,11 @@ textarea {
 }
 
 .input {
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  font-size: 20px;
-  border: solid 2px #f1e5e6;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    border: solid 2px #f1e5e6;
 }
 
 button {
@@ -248,14 +250,12 @@ button:focus {
     background-color: #f1e5e6;
 }
 
-
 form {
     border: solid 3px white;
     padding: 70px;
     margin: 40px;
     background-color: #f1e5e6;
 }
-
 
 h2 {
     align-self: center;
@@ -291,7 +291,6 @@ h3 {
 
 .checklist svg {
     width: 3%;
-   
 }
 
 .inspiration img {
@@ -322,7 +321,7 @@ h3 {
     border: solid;
     border-width: 1px 0 0;
     border-style: solid;
-    border-color: #f1e5e6;;
+    border-color: #f1e5e6;
 }
 
 .inspiration div {
@@ -349,7 +348,6 @@ h3 {
     align-self: center;
 }
 
-
 .budget {
     flex-basis: 50%;
     justify-content: space-between;
@@ -372,7 +370,7 @@ h3 {
 }
 
 .socialmedia svg {
-    fill: #3a3a3a;;
+    fill: #3a3a3a;
     cursor: pointer;
 }
 
@@ -422,14 +420,13 @@ footer {
     width: 50%;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px){
-    .footer{
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .footer {
         display: inline;
         text-align: center;
     }
 
-    .footer-text ul{
-       display: inline-flex;
+    .footer-text ul {
+        display: inline-flex;
     }
-    
 }

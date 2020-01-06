@@ -14,7 +14,7 @@
                     <p> Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br/>
                     Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter http://ec.europa.eu/odr?tid=121194885 zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.<br/> 
                     Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-                    <h3>Haftung für Inhalte dieser Webseite</h3>
+                    <h3>Haftung: Inhalte dieser Webseite</h3>
                     <p>Wir entwickeln die Inhalte dieser
                     Webseite ständig weiter und bemühen uns korrekte und
                     aktuelle Informationen bereitzustellen. Leider können wir
@@ -23,7 +23,7 @@
                     bereitgestellt wurden. Sollten Ihnen problematische oder
                     rechtswidrige Inhalte auffallen, bitten wir Sie uns umgehend
                     zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
-                    <h3>Haftung für Links auf dieser Webseite </h3>
+                    <h3>Haftung: Links auf dieser Webseite </h3>
                     Unsere Webseite
                     enthält Links zu anderen Webseiten für deren Inhalt wir
                     nicht verantwortlich sind. 
