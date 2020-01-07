@@ -8,12 +8,20 @@
         </div>
     </section>
     <section class="main-inspiration">
-        <ul class="inspiration">
-          <li><div class="change"></div><img src="{{ asset('/assets/vintage1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></li>
-          <li><div class="change"></div><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></li>
-          <li><div class="change"></div><img src="{{ asset('/assets/vintage1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></li>
-          <li><div class="change"></div><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></li>
-      </ul>
+        <div class=" gallery" id="gallery">
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien3.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien3.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/freien1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+          <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
+      </div>
 </section>
 </main>
 @endsection
