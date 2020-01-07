@@ -208,7 +208,6 @@ textarea {
     padding: 5px;
     margin: 15px;
     border: 5px solid white;
-    color: #f1e5e6;
     text-align: center;
     transition: 0.3s ease-in-out;
     font-size: 1.3rem;
@@ -218,13 +217,25 @@ textarea {
     border: solid 5px #f1e5e6;
     padding: 5px;
     margin: 15px;
-    color: #f1e5e6;
     text-align: center;
     transition: 0.3s ease-in-out;
     font-size: 1.3rem;
 }
 
 button {
+    z-index: 10;
+    border: 2px solid #3a3a3a;
+    background-color: #3a3a3a;
+    color: #f1e5e6;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+.button {
     z-index: 10;
     border: 2px solid #3a3a3a;
     background-color: #3a3a3a;
@@ -386,6 +397,24 @@ h3 {
     background-color: rgba(241, 228, 230, 0.65);
 }
 
+.errorpage{
+    background: url(../assets/404.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    max-width: inherit;
+}
+
+.errortext{
+    margin-top: 450px;
+    font-size: larger;
+    padding-bottom: 50px;
+}
+
+.errorheader{
+    color: #3a3a3a;
+}
+
 
 
 /*
@@ -428,6 +457,11 @@ footer {
 
 .footerlink {
     color: #f1e5e6;
+}
+
+.footer-text ul li a:hover {
+    transition: 0, 2s;
+    transform: scale(1.1);
 }
 
 .footerlogo {

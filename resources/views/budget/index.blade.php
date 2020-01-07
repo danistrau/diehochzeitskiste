@@ -18,8 +18,7 @@
         <form
             method="post"
             class="main-p"
-            action="{{ action('BudgetController@mainstore') }}"
-        >
+            action="{{ action('BudgetController@mainstore') }}">
             @csrf
             <span class="subheader">Gesamtbudget</span><br />
             <input
@@ -30,19 +29,21 @@
             /><br />
             <button type="submit">Speichern</button>
         </form>
+        
         <ul class="budgetrechner">
             @foreach($budgets as $budget)
+        
             <li>
-                <a href="{{ route('budget.show', $budget->id) }}"
-                    ><div class="change">
+                <p href="{{ route('budget.show', $budget->id) }}">
+                    <div class="change">
                         <h2>{{ $budget->title }}</h2>
-                        <p>
-                            <input type="number" name="price" value="" />
-                        </p></div
-                ></a>
+                        <input  type="number" name="price" value="" />
+                    </div>
+                </p>
             </li>
             @endforeach
         </ul>
+
         <div class="main-p">
             <span class="subheader">Verbleibendes Budget</span><br />
             <input

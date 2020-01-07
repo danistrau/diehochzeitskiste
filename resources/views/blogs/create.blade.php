@@ -3,7 +3,7 @@
 <section class="main">
     <div class="main-text">
         <div class="card card-body">
-            <h1>Neuen Blog erstellen:</h1>
+            <h1>Einen neuen Blog erstellen</h1>
 
             <form
                 class="form" 

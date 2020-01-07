@@ -16,9 +16,7 @@
         class="form-check-input"
         id="checkPublished"
         name="is_published"
-        {{
-        $blog-
-    />is_published ? 'checked' : '' }}>
+        {{$blog->is_published ? 'checked' : '' }}>
     <label for="checkPublished"> Publish</label>
 </div>
 
