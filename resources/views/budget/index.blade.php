@@ -48,12 +48,7 @@
 
         <div class="main-p">
             <span class="subheader">Verbleibendes Budget</span><br />
-            <input
-                class="input"
-                type="number"
-                name="budget"
-                value="{{ $rest_budget }}"
-            />
+            <p>{{ $rest_budget }}</p>
         </div>
     </section>
    

@@ -341,7 +341,7 @@ h3 {
 
 .budgetrechner div {
     border: solid;
-    border-width: 1px 0 0;
+    border-width: 0px 0 1px;
     border-style: solid;
     border-color: #f1e5e6;
 }
