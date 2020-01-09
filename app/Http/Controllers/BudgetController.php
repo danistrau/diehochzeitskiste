@@ -18,12 +18,13 @@ class BudgetController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $rest_budget = $user->total_budget - $user->user_budget;
+        $rest_budget = $user->total_budget - $user->used_budget;
         $rest_budget = round($rest_budget, 2);
-        //dd($budget->getUserBudget()->price);
+
         return view('budget.index', [
             'budgets' => Budget::all(), 
-            "total_budget" => $user->total_budget, 
+            "total_budget" => $user->total_budget,
+            "user_budgets" => $user->budgets,
             "rest_budget" => $rest_budget 
             ]); 
     }

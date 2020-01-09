@@ -37,7 +37,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-
+    protected $with = [
+        'budgets',
+    ];
 
     public function checklist()
     {
@@ -47,22 +49,29 @@ class User extends Authenticatable
     {
     return $this->hasMany(Blog::class);
     }
-    public function budget()
+    public function budgets()
     {
-    return $this->hasMany(Budget::class);
+    return $this->belongsToMany(Budget::class, 'users_budgets')->withPivot('price');
     }
-    public function usersBudgets()
-    {
-    return $this->hasMany(UsersBudgets::class);
-    }
+  
 
     public function usedBudgetAttribute(){
-        $budgets = Budget::all();
         $amount = 0;
 
-        foreach($budgets as $budget) { 
+        foreach($this->budgets as $budget) { 
             $amount += $budget->price;
         } 
         return $amount;
     }
+
+    public function hasBudget(Budget $budget ){
+        return $this->budgets->where('id', $budget->id)->count() > 0;
+    
+    }
+
+    public function getBudget(Budget $budget ){
+        return $this->budgets->where('id', $budget->id)->first();
+    
+    }
+
 }

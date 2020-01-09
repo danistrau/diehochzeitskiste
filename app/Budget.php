@@ -11,11 +11,7 @@ class Budget extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
-    }
-    public function usersBudgets()
-    {
-    return $this->hasMany(UsersBudgets::class);
+        return $this->belongsToMany(User::class, 'users_budgets');
     }
 
     public function hasUserBudget()

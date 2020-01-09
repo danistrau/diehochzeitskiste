@@ -7,9 +7,7 @@
                 <p>
                     Wir haben das von Euch angegebene Gesamtbudget auf einzelne
                     Kategorien runtergebrochen, damit Ihr ein besseres Bild
-                    davon bekommt, wie sich Euer Betrag aufteilen lässt. Dies
-                    sind lediglich Richtwerte und wenn Ihr möchtet, könnt Ihr
-                    immer Veränderungen vornehmen.
+                    davon bekommt, wie sich Euer Betrag aufteilen lässt.
                 </p>
             </div>
         </div>
@@ -18,28 +16,32 @@
         <form
             method="post"
             class="main-p"
-            action="{{ action('BudgetController@mainstore') }}">
+            action="{{ action('BudgetController@mainstore') }}" >
             @csrf
             <span class="subheader">Gesamtbudget</span><br />
             <input
                 class="input"
                 type="number"
                 name="total_budget"
-                value="{{ $total_budget }}"
-            /><br />
+                value="{{ $total_budget }}"/><br />
             <button type="submit">Speichern</button>
         </form>
-        
+
         <ul class="budgetrechner">
             @foreach($budgets as $budget)
-        
             <li>
-                <p href="{{ route('budget.show', $budget->id) }}">
-                    <div class="change">
-                        <h2>{{ $budget->title }}</h2>
-                        <input  type="number" name="price" value="" />
-                    </div>
-                </p>
+                @php
+                    $userBudget=Auth::user()->getBudget($budget);
+                @endphp
+                <h2>{{ $budget->title }}</h2>
+                <div class="userbudget change" >
+                <input data-id="{{$budget->id}}"
+                        type="number" 
+                        name="price" 
+                        class="input-budget"
+                value="{{ $userBudget != null ? $userBudget->pivot->price : 0 }}" />
+                </div>
+                
             </li>
             @endforeach
         </ul>
@@ -54,5 +56,21 @@
             />
         </div>
     </section>
+   
 </main>
 @endsection
+@push('scripts')
+<script>
+    $( document ).ready(function() {
+        $('.userbudget').each(function(index,element){
+            console.log($(element).data('id'));
+        });
+        $('.input-budget').keydown(function(e){
+            if(e.which == 13){
+                e.preventDefault();
+            }
+        })
+    });
+
+</script>
+@endpush

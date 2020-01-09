@@ -9,8 +9,11 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
    
-   //
+   public function inputBudget (Request $request)
+    {
 
+     
+    }
 
      
 }

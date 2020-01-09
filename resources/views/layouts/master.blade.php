@@ -22,10 +22,16 @@
             href="{{ asset('/assets/logo_16x16.png') }}"
         />
         <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
-        <script src="{{ asset('js/main.js') }}"></script>
+        
     </head>
     <body>
         @include('partials.navbar') @include('partials.alerts')
-        @yield('container') @include('partials.footer')
+        
+        @yield('container') 
+        @include('partials.footer')
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+        @stack('scripts')
     </body>
 </html>
