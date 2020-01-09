@@ -83,6 +83,8 @@
                     console.log(data.data);
                     $(this).val(data.data);
 
+                    location.reload(true);
+
                 });
             }
         })
