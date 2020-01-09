@@ -59,15 +59,31 @@
    
 </main>
 @endsection
+
 @push('scripts')
 <script>
     $( document ).ready(function() {
-        $('.userbudget').each(function(index,element){
-            console.log($(element).data('id'));
-        });
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN':document.head.querySelector('meta[name="csrf-token"]').content
+            }
+        })
+
         $('.input-budget').keydown(function(e){
             if(e.which == 13){
                 e.preventDefault();
+                let id = $(this).data('id');
+                console.log(id);
+                $.post("/user/inputBudget/" + id, {
+                    price:$(this).val()
+                })
+                
+                .done( function(data){
+                    console.log(data.data);
+                    $(this).val(data.data);
+
+                });
             }
         })
     });

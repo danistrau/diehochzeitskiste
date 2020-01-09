@@ -99,6 +99,13 @@ Route::middleware('auth')->name('blogs.')->prefix('blogs')->group(function() {
     Route::delete('/{blog}', 'BlogController@destroy')->name('destroy');
 });
 
+Route::middleware('auth')->name('user.')->prefix('user')->group(function() {
+
+
+    Route::post('inputBudget/{budget}', 'UserController@inputBudget')->name('inputBudget');
+   
+});
+
 
 
 

@@ -30,7 +30,7 @@
         @yield('container') 
         @include('partials.footer')
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
         <script src="{{ asset('js/main.js') }}"></script>
         @stack('scripts')
     </body>

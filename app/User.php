@@ -57,10 +57,11 @@ class User extends Authenticatable
 
     public function usedBudgetAttribute(){
         $amount = 0;
-
+        $this->load('budgets');
         foreach($this->budgets as $budget) { 
-            $amount += $budget->price;
+            $amount += $budget->pivote->price;
         } 
+       
         return $amount;
     }
 
