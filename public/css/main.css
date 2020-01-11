@@ -404,8 +404,6 @@ h3 {
     }
 }
 
-
-
 .aboutme {
     display: flex;
     justify-content: space-between;
@@ -443,6 +441,15 @@ h3 {
     padding: 50px;
     margin: 35px;
     background-color: rgba(241, 228, 230, 0.65);
+}
+
+.blogdetail{
+    background: url(../assets/blogdetail.png);
+    background-size: cover;
+    background-color: #3a3a3a;
+    background-position: center;
+    background-blend-mode: soft-light;
+    max-width: inherit;
 }
 
 .errorpage {
