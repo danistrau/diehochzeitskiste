@@ -63,7 +63,7 @@ Sticky NAV
 
     var tl = new TimelineLite();
 
-    tl.from(".main-content", 2, { x: -1500 });
-    tl.from(".main-text", 2, { x: -1500 });
+    //tl.from(".main-content", 2, { x: -1500 });
+    //tl.from(".main-text", 2, { x: -1500 });
     
 });
