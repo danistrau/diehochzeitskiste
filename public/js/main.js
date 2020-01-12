@@ -50,30 +50,13 @@ Sticky NAV
     BURGER
  */
 
-    var burger = document.querySelector(".menu");
+    var burger = document.querySelector(".burger");
 
     burger.addEventListener("click", function() {
         burger.classList.toggle("open");
         document.querySelector(".mobile-container").classList.toggle("display");
     });
 
-    /* 
-Bilder Hover
- */
 
-    let foo = document.querySelectorAll(".change");
-
-    for (let i = 0; i < foo.length; i++) {
-        foo[i].addEventListener("mouseover", function(_e) {
-            _e.target.classList.add("changer");
-            console.log(this);
-        });
-    }
-
-    for (let i = 0; i < foo.length; i++) {
-        foo[i].addEventListener("mouseleave", function(_e) {
-            _e.target.classList.remove("changer");
-            console.log(this);
-        });
-    }
+    
 });

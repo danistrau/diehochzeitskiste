@@ -117,13 +117,12 @@ nav ul {
 .mobile-container {
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 50%;
     top: 0;
     left: 0;
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(5, 5, 5, 0.9);
     text-align: center;
-    padding-top: 150px;
     display: none;
 }
 
@@ -137,6 +136,7 @@ nav ul {
 
 #burger {
     z-index: 30;
+    width: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
@@ -146,7 +146,7 @@ nav ul {
 }
 
 @media only screen and (min-width: 700px) {
-    .menu {
+    .burger {
         display: none;
     }
 }
