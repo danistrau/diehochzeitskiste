@@ -217,6 +217,16 @@ h1 {
     text-align: center;
 }
 
+.main-svg li:hover{
+    transition: 0, 4s;
+    transform: scale(1.1);
+}
+
+.inspiration li:hover{
+    transition: 0, 4s;
+    transform: scale(1.1);
+}
+
 label {
     font-size: 1.3rem;
     transition: all 0.2s ease;
