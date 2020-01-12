@@ -57,6 +57,11 @@ Sticky NAV
         document.querySelector(".mobile-container").classList.toggle("display");
     });
 
+    /* 
+    Greensock
+ */
 
-    
+    var tl = new TimelineLite();
+
+    tl.from(".main-text", 4, { x: -1300 }).to(".main-text", 5, { x: 0 });
 });
