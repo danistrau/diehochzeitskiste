@@ -89,25 +89,25 @@ nav ul {
     transition: height 0.3s ease-in-out;
 }
 
-.nav ul li{
+.nav ul li {
     opacity: 0;
     animation-name: bounceIn;
     animation-duration: 450ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-  }
-  
-  .nav ul li:nth-child(2){
-    animation-delay: .20s;
-  }
-  
-  .nav ul li:nth-child(3){
-    animation-delay: 0.50s;
-  }
-  
-  .nav ul li:nth-child(4){
+}
+
+.nav ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.nav ul li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.nav ul li:nth-child(4) {
     animation-delay: 1s;
-  }
+}
 
 .nav-mobile {
     font-size: 40px;
@@ -218,12 +218,12 @@ h1 {
     text-align: center;
 }
 
-.main-svg li:hover{
+.main-svg li:hover {
     transition: 0, 4s;
     transform: scale(1.1);
 }
 
-.inspiration li:hover{
+.inspiration li:hover {
     transition: 0, 4s;
     transform: scale(1.1);
 }
@@ -342,16 +342,18 @@ h3 {
     justify-content: space-between;
 }
 
-.checklist_item:hover{
+.checklist_item:hover {
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
 .checklist svg {
-    width: 5%;
+    width: 3%;
 }
 
-
+.checked {
+    color: green;
+}
 
 .inspiration img {
     padding: 80px 0;
@@ -481,7 +483,7 @@ h3 {
     background-color: rgba(241, 228, 230, 0.65);
 }
 
-.blogdetail{
+.blogdetail {
     background: url(../assets/blogdetail.png);
     background-size: cover;
     background-color: #3a3a3a;
@@ -511,7 +513,7 @@ h3 {
 .changer {
     opacity: 0;
     z-index: 2;
-  }
+}
 
 /*
 FOOTER
@@ -575,23 +577,21 @@ footer {
     }
 }
 
-
-@keyframes bounceIn{
-    0%{
-      opacity: 0;
-      transform: scale(0.3) translate3d(0,0,0);
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate3d(0, 0, 0);
     }
-    50%{
-      opacity: 0.9;
-      transform: scale(1.1);
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
     }
-    80%{
-      opacity: 1;
-      transform: scale(0.89);
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
     }
-    100%{
-      opacity: 1;
-      transform: scale(1) translate3d(0,0,0);
+    100% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
     }
-  }
-
+}

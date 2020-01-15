@@ -50,7 +50,7 @@ Route::get('/freien', function () {
 Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
 
     Route::get('', 'AdminController@index')->name('index');
-  
+    Route::get('/users', 'AdminController@users')->name('users');
 
 });
 
@@ -62,7 +62,8 @@ Route::middleware('auth')->name('checklist.')->prefix('checklist')->group(functi
     Route::get('/{id}', 'ChecklistController@show')->name('show'); 
     Route::get('/{id}/edit', 'ChecklistController@edit')->name('edit');
     Route::put('/{id}', 'ChecklistController@update')->name('update');
-    Route::delete('/{id}', 'ChecklistController@destroy')->name('destroy');
+    Route::delete('/{item}', 'ChecklistController@destroy')->name('destroy');
+    Route::post('/{item}', 'ChecklistController@checked')->name('checked');
 
 });
 

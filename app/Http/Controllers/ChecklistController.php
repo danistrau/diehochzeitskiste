@@ -17,8 +17,7 @@ class ChecklistController extends Controller
     {
         $checklists = Checklist::where("user_id", Auth::user()->id)->get();
 
-        return view('checklist.index', ['checklists' => $checklists]); 
-
+        return view('checklist.index', ['checklists' => $checklists]);
     }
 
     /**
@@ -44,17 +43,16 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
-        
-            
+
+
         ]);
 
         $checklist = new Checklist($request->all());
         $checklist->checked = isset($request->all()["checked"]);
-        $checklist->user_id = auth()->id(); 
-        $checklist->save(); 
-        
-        return redirect()->route('checklist.index')->with('success','Checklist created'); 
-        
+        $checklist->user_id = auth()->id();
+        $checklist->save();
+
+        return redirect()->route('checklist.index')->with('success', 'Checklist created');
     }
 
     /**
@@ -67,7 +65,7 @@ class ChecklistController extends Controller
     {
         $checklist = Checklist::findOrFail($id);
 
-        return view('checklist.show', ['checklist' => $checklist]); 
+        return view('checklist.show', ['checklist' => $checklist]);
     }
 
     /**
@@ -80,8 +78,7 @@ class ChecklistController extends Controller
     {
         $checklist = Checklist::findOrFail($id);
 
-        return view('checklist.edit', ['checklist' => $checklist]); 
-            
+        return view('checklist.edit', ['checklist' => $checklist]);
     }
 
     /**
@@ -96,15 +93,15 @@ class ChecklistController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|max:255',
-    
+
         ]);
 
         $checklist = Checklist::findOrFail($id);
         $checklist->fill($request->all());
         $checklist->checked = $request->has('checked') ? 1 : 0;
-        $checklist->save(); 
-        
-        return redirect()->route('checklist.index')->with('success','Checklist updated');
+        $checklist->save();
+
+        return redirect()->route('checklist.index')->with('success', 'Checklist updated');
     }
 
     /**
@@ -113,11 +110,18 @@ class ChecklistController extends Controller
      * @param  \App\Checklist  $checklist
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Checklist $item)
     {
-        $checklist = Checklist::findOrFail($id);
-        $checklist->delete();
 
-        return redirect()->route('checklist.index')->with('success','Checklist deleted'); 
+        return ['success' => $item->delete()];
+    }
+
+
+    public function checked(Checklist $item)
+    {
+
+        $checklist->checked = $request->has('checked') ? 1 : 0;
+
+        return ['success' => $item->checked()];
     }
 }
