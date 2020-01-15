@@ -8,6 +8,7 @@
         </div>
     </section>
     <section class="main-inspiration">
+        <a href="/inspiriation"><button type="submit">Zurück</button></a>
         <div class=" gallery" id="gallery">
           <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage1.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>
           <div class="gallery-item"><div class="content"><img src="{{ asset('/assets/vintage2.jpg') }}" alt="Ein vintage dekoriertert Hochzeitstisch mit unterschiedlichsten Blumen und Vasen"></div></div>

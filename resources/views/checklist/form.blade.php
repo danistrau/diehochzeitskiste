@@ -10,5 +10,4 @@
 
 <button type="submit">Speichern</button>
 <a href="{{ route('checklist.index') }}"
-    ><button type="submit">Zurück</button></a
->
+    ><button type="submit">Zurück</button></a>

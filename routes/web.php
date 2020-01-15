@@ -50,6 +50,7 @@ Route::get('/freien', function () {
 Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
 
     Route::get('', 'AdminController@index')->name('index');
+  
 
 });
 
