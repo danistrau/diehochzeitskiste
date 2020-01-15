@@ -22,7 +22,7 @@
                     >{{ $checklist->checked }}</a
                 >
                 <div>
-                    <span>
+                    <form>
                     <input type="checkbox" id="checked" name="checked" onClick="checkbox()" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                         <path
@@ -32,7 +32,7 @@
                             d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 00-1.249 1.562l10 8a.999.999 0 001.373-.117l16-18a1 1 0 10-1.496-1.328z"
                         />
                     </svg>
-                </span>
+                </form>
                 <form
                 action="{{ route('checklist.destroy', $checklist->id) }}"
                 method="post">
@@ -53,16 +53,15 @@
                 </div>
             </li>
             @endforeach
-            <a href="{{ route('checklist.create') }}">Checkliste hinzufügen</a>
 
 
             <form
-            action="{{ route('checklist.update', $checklist->id) }}"
+            action="{{ route('checklist.store', $checklist->id) }}"
             method="post"
-            autocomplete="off">
+            >
             @csrf
 <div>
-    <input type="text" name="title" value="{{ $checklist->title }}" required />
+    <input class="input" type="text" name="title" value="{{ $checklist->title }}" required />
 </div>
 
 

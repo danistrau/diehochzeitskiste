@@ -3,7 +3,7 @@
     <main>
         <section class="main-head">
             <div class="main">
-                <div class="main-header">
+                <div>
                     <h1 class="subheader">Willkommen!</h1>
                     <div class="main-text">
                         @if (session('status'))
