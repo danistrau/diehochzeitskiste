@@ -2,16 +2,27 @@
 
 @section('container')
 
-<div class="container">
-        <div class="row">
-            <h1>Alle User im Überblick</h1>
-            <ul>
+<div class="main">
+        <div class="main-text">
+            <h1>Alle regestrierten User</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                  <th>User Name</th>
+                  <th>E-Mail Adresse</th>
+                  <th>Gesamtbudget</th>
+                </tr>
+                </thead>
+                <tbody>
                 @foreach ($users as $user)
-                <li>{{ $user->name }}</li>
-                <li>{{ $user->email }}</li>
-                <li>{{ $user->total_budget }}</li>
+                <tr>
+                  <td>{{ $user->name }}</td>
+                  <td>{{ $user->email }}</td>
+                  <td>{{ $user->total_budget }}</td>
+                </tr>
                 @endforeach
-            </ul>
+            </tbody>
+              </table>
         </div>
     </div>
 @endsection

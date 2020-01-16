@@ -3,12 +3,12 @@
     <section class="main-head">
         <div class="main">
             <div>
-                <h1 class="subheader">Vintage</h1>
+                <h1 class="subheader">Titel</h1>
             </div>
         </div>
     </section>
     <section class="main-inspiration">
-        <a href="/inspiriation"><button type="submit">Zurück</button></a>
+        <a href="/inspirationen"><button type="submit">Zurück</button></a>
         <div class=" gallery" id="gallery">
             @if(count($imgs))
                 @foreach($imgs as $img)
