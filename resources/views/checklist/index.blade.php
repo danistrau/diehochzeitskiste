@@ -22,12 +22,12 @@
                     @if(!$item->checked)
                    
                     <span class="checkEntry cursor-pointer"
-                    data-id="{{$item->id}}"><i class="fa fa-check-circle-o fa-2x" ></i></span>
+                    data-id="{{$item->id}}"><i class="fa fa-check-circle-o" ></i></span>
 
                     @endif
 
                     <span class="deleteEntry cursor-pointer" data-id="{{$item->id}}"
-                        ><i class="fa fa-trash fa-2x"></i>
+                        ><i class="fa fa-trash-o"></i>
                     </span>
                 </div>
             </li>
