@@ -21,21 +21,21 @@
             <ul class="main-svg">
                 <li>
                     <a class="svglink" href="{{ route('checklist.index') }}"
-                        ><i class="fa fa-list-ul fa-5x"></i
+                        ><i class="fa fa-list-ul fa-4x"></i
                     ></a>
                     <h4>Checkliste</h4>
                     <p>Habt alle To-Dos auf einem Blick</p>
                 </li>
                 <li>
                     <a class="svglink" href="/budget"
-                        ><i class="fa fa-credit-card fa-5x"></i
+                        ><i class="fa fa-credit-card fa-4x"></i
                     ></a>
                     <h4>Budgetrechner</h4>
                     <p>Stellt sicher, dass Ihr im Budget bleibt</p>
                 </li>
                 <li>
                     <a class="svglink" href="/inspirationen"
-                        ><i class="fa fa-lightbulb-o fa-5x"></i
+                        ><i class="fa fa-lightbulb-o fa-4x"></i
                     ></a>
                     <h4>Inpirationen</h4>
                     <p>Lasst euch von Trends inspirieren</p>
