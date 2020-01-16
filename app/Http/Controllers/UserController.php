@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-   
-   public function inputBudget (Request $request, Budget $budget)
-    {
+
+   public function inputBudget(Request $request, Budget $budget)
+   {
       $user = Auth::user();
       $price = round(floatVal($request->get('price')), 2);
 
@@ -21,9 +21,5 @@ class UserController extends Controller
       return [
          'data' => round($user->getBudget($budget)->pivot->price, 2)
       ];
-     
-      
-    }
-
-     
+   }
 }

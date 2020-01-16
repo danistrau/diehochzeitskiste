@@ -22,11 +22,11 @@ class BudgetController extends Controller
         $rest_budget = round($rest_budget, 2);
 
         return view('budget.index', [
-            'budgets' => Budget::all(), 
+            'budgets' => Budget::all(),
             "total_budget" => $user->total_budget,
             "user_budgets" => $user->budgets,
-            "rest_budget" => $rest_budget 
-            ]); 
+            "rest_budget" => $rest_budget
+        ]);
     }
 
     public function mainstore(Request $request)
@@ -35,12 +35,12 @@ class BudgetController extends Controller
 
             'total_budget' => 'required',
         ]);
-           
+
         $users = Auth::user();
-        $users->total_budget = request('total_budget'); 
-        $users->save(); 
-        
-        return redirect()->route('budget.index')->with('success','Budget created');  
+        $users->total_budget = request('total_budget');
+        $users->save();
+
+        return redirect()->route('budget.index')->with('success', 'Budget created');
     }
 
 
@@ -54,14 +54,14 @@ class BudgetController extends Controller
     {
         $this->validate($request, [
 
-            'price' => 'required',   
+            'price' => 'required',
         ]);
-    
+
         $budget = new Budget($request->all());
-        $budget->user_id = auth()->id(); 
-        $budget->save(); 
-        
-        return redirect()->route('budget.index')->with('success','Budget created'); 
+        $budget->user_id = auth()->id();
+        $budget->save();
+
+        return redirect()->route('budget.index')->with('success', 'Budget created');
     }
 
     /**
@@ -74,7 +74,7 @@ class BudgetController extends Controller
     {
         $budget = Budget::findOrFail($id);
 
-        return view('budget.show', ['budget' => $budget]); 
+        return view('budget.show', ['budget' => $budget]);
     }
 
 
@@ -90,17 +90,13 @@ class BudgetController extends Controller
         $this->validate($request, [
 
             'price' => 'required',
-        
+
         ]);
 
         $budget = Budget::findOrFail($id);
         $budget->fill($request->all());
-        $budget->save(); 
-        
-        return redirect()->route('budget.index')->with('success','Budget updated');
+        $budget->save();
+
+        return redirect()->route('budget.index')->with('success', 'Budget updated');
     }
-
- 
-
-     
 }

@@ -11,10 +11,9 @@ class InspirationController extends Controller
    {
       $imgs = \Storage::disk('public')->files($type);
       return view("inspirationen.show", [
-          'imgs' => $imgs,
-            'type' => $type,
+         'imgs' => $imgs,
+         'type' => $type,
 
-          ]);
+      ]);
    }
-
 }

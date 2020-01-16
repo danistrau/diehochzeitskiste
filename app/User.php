@@ -43,37 +43,36 @@ class User extends Authenticatable
 
     public function checklist()
     {
-    return $this->hasMany(Checklist::class);
+        return $this->hasMany(Checklist::class);
     }
     public function blog()
     {
-    return $this->hasMany(Blog::class);
+        return $this->hasMany(Blog::class);
     }
     public function budgets()
     {
-    return $this->belongsToMany(Budget::class, 'users_budgets')->withPivot('price');
+        return $this->belongsToMany(Budget::class, 'users_budgets')->withPivot('price');
     }
-  
 
-    public function getUsedBudgetAttribute(){
+
+    public function getUsedBudgetAttribute()
+    {
         $amount = 0;
         $this->load('budgets');
-        foreach($this->budgets as $budget) { 
+        foreach ($this->budgets as $budget) {
             $amount += $budget->pivot->price;
+        }
 
-        } 
-       
         return $amount;
     }
 
-    public function hasBudget(Budget $budget ){
+    public function hasBudget(Budget $budget)
+    {
         return $this->budgets->where('id', $budget->id)->count() > 0;
-    
     }
 
-    public function getBudget(Budget $budget ){
+    public function getBudget(Budget $budget)
+    {
         return $this->budgets->where('id', $budget->id)->first();
-    
     }
-
 }

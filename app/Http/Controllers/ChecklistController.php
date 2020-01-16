@@ -45,7 +45,6 @@ class ChecklistController extends Controller
 
             'title' => 'required|string|max:255',
 
-
         ]);
 
         $checklist = new Checklist($request->all());
@@ -65,7 +64,6 @@ class ChecklistController extends Controller
     public function show($id)
     {
         $checklist = Checklist::findOrFail($id);
-       
 
         return view('checklist.show', ['checklist' => $checklist]);
     }

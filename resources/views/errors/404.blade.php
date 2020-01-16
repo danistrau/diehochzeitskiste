@@ -96,7 +96,7 @@
             text-align: center;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
     </style>

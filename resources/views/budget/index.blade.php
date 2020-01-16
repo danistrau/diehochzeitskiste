@@ -16,32 +16,33 @@
         <form
             method="post"
             class="main-p"
-            action="{{ action('BudgetController@mainstore') }}" >
+            action="{{ action('BudgetController@mainstore') }}"
+        >
             @csrf
             <span class="subheader">Gesamtbudget</span><br />
             <input
                 class="input"
                 type="number"
                 name="total_budget"
-                value="{{ $total_budget }}"/><br />
+                value="{{ $total_budget }}"
+            /><br />
             <button type="submit">Speichern</button>
         </form>
 
         <ul class="budgetrechner">
             @foreach($budgets as $budget)
             <li>
-                @php
-                    $userBudget=Auth::user()->getBudget($budget);
-                @endphp
+                @php $userBudget=Auth::user()->getBudget($budget); @endphp
                 <h2>{{ $budget->title }}</h2>
-                <div class="userbudget change" >
-                <input data-id="{{$budget->id}}"
-                        type="number" 
-                        name="price" 
+                <div class="userbudget change">
+                    <input
+                        data-id="{{$budget->id}}"
+                        type="number"
+                        name="price"
                         class="input-budget"
-                value="{{ $userBudget != null ? $userBudget->pivot->price : 0 }}" />
+                        value="{{ $userBudget != null ? $userBudget->pivot->price : 0 }}"
+                    />
                 </div>
-                
             </li>
             @endforeach
         </ul>
@@ -51,39 +52,34 @@
             <p>{{ $rest_budget }}</p>
         </div>
     </section>
-   
 </main>
-@endsection
-
-@push('scripts')
+@endsection @push('scripts')
 <script>
-    $( document ).ready(function() {
-
+    $(document).ready(function() {
         $.ajaxSetup({
             headers: {
-                'X-CSRF-TOKEN':document.head.querySelector('meta[name="csrf-token"]').content
+                "X-CSRF-TOKEN": document.head.querySelector(
+                    'meta[name="csrf-token"]'
+                ).content
             }
-        })
+        });
 
-        $('.input-budget').keydown(function(e){
-            if(e.which == 13){
+        $(".input-budget").keydown(function(e) {
+            if (e.which == 13) {
                 e.preventDefault();
-                let id = $(this).data('id');
+                let id = $(this).data("id");
                 console.log(id);
                 $.post("/user/inputBudget/" + id, {
-                    price:$(this).val()
+                    price: $(this).val()
                 })
-                
-                .done( function(data){
+                .done(function(data) {
                     console.log(data.data);
                     $(this).val(data.data);
 
                     location.reload(true);
-
                 });
             }
-        })
+        });
     });
-
 </script>
 @endpush

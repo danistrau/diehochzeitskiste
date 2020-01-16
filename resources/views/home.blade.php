@@ -13,16 +13,36 @@
                         @endif
                         <section class="main-text">
                             <h3>Hochzeitsplanung einfach gemacht</h3>
-                            <p class="main-p">Die Hochzeitskiste bietet das perfekte Werkzeug, um deine Hochzeit einfach und bequem zu planen</p>
-                      </section>
-                       
+                            <p class="main-p">
+                                Die Hochzeitskiste bietet das perfekte Werkzeug,
+                                um deine Hochzeit einfach und bequem zu planen
+                            </p>
+                        </section>
+
                         <div class="main-form">
-                                <ul class="main-svg">
-                                    <li><a class="svglink" href="{{ route('checklist.index') }}"><i class="fa fa-list-ul fa-5x"></i></a><p>Checkliste</p></li>
-                                    <li><a class="svglink" href="/budget"><i class="fa fa-credit-card fa-5x" ></i></a><p>Budgetrechner</p></li>
-                                    <li><a class="svglink" href="/inspirationen"><i class="fa fa-lightbulb-o fa-5x" ></i></a><p>Inspiriationen</p></li>
-                                </ul>
-                            </div>
+                            <ul class="main-svg">
+                                <li>
+                                    <a
+                                        class="svglink"
+                                        href="{{ route('checklist.index') }}"
+                                        ><i class="fa fa-list-ul fa-5x"></i
+                                    ></a>
+                                    <p>Checkliste</p>
+                                </li>
+                                <li>
+                                    <a class="svglink" href="/budget"
+                                        ><i class="fa fa-credit-card fa-5x"></i
+                                    ></a>
+                                    <p>Budgetrechner</p>
+                                </li>
+                                <li>
+                                    <a class="svglink" href="/inspirationen"
+                                        ><i class="fa fa-lightbulb-o fa-5x"></i
+                                    ></a>
+                                    <p>Inspiriationen</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

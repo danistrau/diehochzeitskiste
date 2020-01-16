@@ -43,7 +43,7 @@ class BlogController extends Controller
 
             'title' => 'required|string|min:3|max:192',
             'text' => 'required|string|between:2,140',
-            
+
         ]);
 
         $blog = new Blog();

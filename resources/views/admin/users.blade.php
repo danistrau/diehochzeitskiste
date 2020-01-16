@@ -1,28 +1,26 @@
-@extends('layouts.master') 
-
-@section('container')
+@extends('layouts.master') @section('container')
 
 <div class="main">
-        <div class="main-text">
-            <h1>Alle regestrierten User</h1>
-            <table class="table">
-                <thead>
+    <div class="main-text">
+        <h1>Alle regestrierten User</h1>
+        <table class="table">
+            <thead>
                 <tr>
-                  <th>User Name</th>
-                  <th>E-Mail Adresse</th>
-                  <th>Gesamtbudget</th>
+                    <th>User Name</th>
+                    <th>E-Mail Adresse</th>
+                    <th>Gesamtbudget</th>
                 </tr>
-                </thead>
-                <tbody>
+            </thead>
+            <tbody>
                 @foreach ($users as $user)
                 <tr>
-                  <td>{{ $user->name }}</td>
-                  <td>{{ $user->email }}</td>
-                  <td>{{ $user->total_budget }}</td>
+                    <td>{{ $user->name }}</td>
+                    <td>{{ $user->email }}</td>
+                    <td>{{ $user->total_budget }}</td>
                 </tr>
                 @endforeach
             </tbody>
-              </table>
-        </div>
+        </table>
     </div>
+</div>
 @endsection

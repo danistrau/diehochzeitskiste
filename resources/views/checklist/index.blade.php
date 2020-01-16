@@ -20,13 +20,18 @@
                 >
                 <div>
                     @if(!$item->checked)
-                   
-                    <span class="checkEntry cursor-pointer"
-                    data-id="{{$item->id}}"><i class="fa fa-check-circle-o" ></i></span>
+
+                    <span
+                        class="checkEntry cursor-pointer"
+                        data-id="{{$item->id}}"
+                        ><i class="fa fa-check-circle-o"></i
+                    ></span>
 
                     @endif
 
-                    <span class="deleteEntry cursor-pointer" data-id="{{$item->id}}"
+                    <span
+                        class="deleteEntry cursor-pointer"
+                        data-id="{{$item->id}}"
                         ><i class="fa fa-trash-o"></i>
                     </span>
                 </div>
