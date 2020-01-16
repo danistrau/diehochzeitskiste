@@ -5,7 +5,7 @@
         <ul id="top" class=" navbar-nav">
             <li class="nav_content"><a  href="{{ route('checklist.index') }}">Checkliste</a></li>
             <li class="nav_content"><a  href="/budget">Budget</a></li>
-            <li class="nav_content"><a href="/inspiriation">Inspiriation</a></li>
+            <li class="nav_content"><a href="/inspirationen">Inspiriation</a></li>
             <li class="nav_content"><a href="/blogs">Blog's</a></li>
             <li class="menu">
                 <a href="" id="burger" class="burger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.3 26.9"><path d="M28.2 11.9h-27c-.7 0-1.2.7-1.2 1.6 0 .8.5 1.5 1.2 1.5h26.9c.7 0 1.2-.7 1.2-1.6 0-.8-.5-1.5-1.1-1.5zm0-11.9h-27C.5 0 0 .7 0 1.6s.5 1.6 1.2 1.6h26.9c.7 0 1.2-.7 1.2-1.6S28.8 0 28.2 0zm0 23.8h-27c-.7 0-1.2.7-1.2 1.6 0 .9.5 1.6 1.2 1.6h26.9c.7 0 1.2-.7 1.2-1.6 0-.9-.5-1.6-1.1-1.6z"/></svg></a>

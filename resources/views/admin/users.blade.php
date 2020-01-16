@@ -1,4 +1,7 @@
-@extends('layouts.master') @section('container')
+@extends('layouts.master') 
+
+@section('container')
+
 <div class="container">
         <div class="row">
             <h1>Alle User im Überblick</h1>

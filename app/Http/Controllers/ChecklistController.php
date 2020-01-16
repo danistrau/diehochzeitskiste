@@ -16,6 +16,7 @@ class ChecklistController extends Controller
     public function index()
     {
         $checklists = Checklist::where("user_id", Auth::user()->id)->get();
+        //dd($checklists);
 
         return view('checklist.index', ['checklists' => $checklists]);
     }
@@ -64,6 +65,7 @@ class ChecklistController extends Controller
     public function show($id)
     {
         $checklist = Checklist::findOrFail($id);
+       
 
         return view('checklist.show', ['checklist' => $checklist]);
     }
@@ -112,16 +114,14 @@ class ChecklistController extends Controller
      */
     public function destroy(Checklist $item)
     {
-
         return ['success' => $item->delete()];
     }
 
 
-    public function checked(Checklist $item)
+    public function markChecked(Checklist $item)
     {
+        $item->checked = true;
 
-        $checklist->checked = $request->has('checked') ? 1 : 0;
-
-        return ['success' => $item->checked()];
+        return ['success' => $item->save()];
     }
 }

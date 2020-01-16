@@ -19,8 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/inspiriation', function () {
-    return view('inspiriation');
+Route::get('/inspirationen', function () {
+    return view('inspirationen.index');
 });
 
 Route::get('/überuns', function () {
@@ -31,26 +31,16 @@ Route::get('/datenschutz', function () {
     return view('datenschutz');
 });
 
-Route::get('/vintage', function () {
-    return view('vintage');
-});
+Route::get('inspirationen/{type}', 'InspirationController@show')->name('inspirationenType');
 
-Route::get('/trachten', function () {
-    return view('trachten');
-});
-
-Route::get('/klassisch', function () {
-    return view('klassisch');
-});
-
-Route::get('/freien', function () {
-    return view('freien');
-});
 
 Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
 
     Route::get('', 'AdminController@index')->name('index');
     Route::get('/users', 'AdminController@users')->name('users');
+    Route::get('/inspirationen', 'AdminController@inspirationen')->name('inspirationen');
+    Route::get('/inspirationen/{type}', 'AdminController@inspirationenType')->name('inspirationenType');
+    Route::post('/inspirationen/uploadImgs', 'AdminController@uploadImgs')->name('uploadImgs');
 
 });
 
@@ -63,7 +53,7 @@ Route::middleware('auth')->name('checklist.')->prefix('checklist')->group(functi
     Route::get('/{id}/edit', 'ChecklistController@edit')->name('edit');
     Route::put('/{id}', 'ChecklistController@update')->name('update');
     Route::delete('/{item}', 'ChecklistController@destroy')->name('destroy');
-    Route::post('/{item}', 'ChecklistController@checked')->name('checked');
+    Route::post('/{item}/markChecked', 'ChecklistController@markChecked')->name('checked');
 
 });
 

@@ -10,7 +10,7 @@
     <section class="main-inspiration">
         <ul class="inspiration">
             <li>
-                <a href="/vintage"
+            <a href="{{ route('inspirationenType', ['type'=> 'vintage']) }}"
                     ><div class="change"><h2>Vintage</h2></div>
                     <img
                         src="{{ asset('/assets/vintage.jpg') }}"
