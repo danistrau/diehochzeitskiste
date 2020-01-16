@@ -46,10 +46,9 @@
             </li>
             @endforeach
         </ul>
-
         <div class="main-p">
             <span class="subheader">Verbleibendes Budget</span><br />
-            <p>{{ $rest_budget }}</p>
+            <h3>{{ $rest_budget }}</h3>
         </div>
     </section>
 </main>

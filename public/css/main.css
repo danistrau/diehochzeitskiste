@@ -176,7 +176,7 @@ h1 {
     text-align: center;
     padding-bottom: 40px;
     margin-bottom: 50px;
-    border-bottom: solid 5px #f1e5e6;
+    border-bottom: solid 3px #f1e5e6;
 }
 
 .main-content {
@@ -245,7 +245,7 @@ textarea {
 }
 
 .input {
-    border: solid 5px #f1e5e6;
+    border: solid 3px #f1e5e6;
     padding: 5px;
     margin: 15px;
     text-align: center;
@@ -368,7 +368,7 @@ h3 {
 }
 
 .main-budgetrechner .budgetrechner li {
-    flex-basis: 33, 3%;
+    flex-basis: 45%;
 }
 
 .main-inspiration .inspiration li {
@@ -377,7 +377,7 @@ h3 {
 
 .budgetrechner div {
     border: solid;
-    border-width: 0px 0 1px;
+    border-width: 0px 0 2px;
     border-style: solid;
     border-color: #f1e5e6;
 }
@@ -461,6 +461,9 @@ h3 {
     text-align: center;
     padding: 0;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blog {

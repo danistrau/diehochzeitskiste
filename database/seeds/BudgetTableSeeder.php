@@ -17,6 +17,7 @@ class BudgetTableSeeder extends Seeder
             'Unterhaltung, Musik, Video',
             'Mode, Schmuck, Make-up',
             'Blumen & Deko',
+            'Auto, Motorrad, Kutsche',
             'Sonstiges',
         ];
 
