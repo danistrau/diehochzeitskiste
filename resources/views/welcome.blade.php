@@ -2,7 +2,7 @@
 <main>
     <section class="main-head">
         <div class="main-content">
-            <img src="{{ asset('/assets/header.jpg') }}" />
+            <img src="{{ asset('/assets/header.jpg') }}" alt="Ein Schribstisch mit einer Mac Tastatur, einem rosa Nagellack und Büchern" />
             <div class="main-header">
                 <h1 class="header">Die Hochzeitskiste</h1>
                 <p>Checkliste, Budgetrechner, Inspirationen, Blog</p>

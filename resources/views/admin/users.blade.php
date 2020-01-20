@@ -21,6 +21,7 @@
                 @endforeach
             </tbody>
         </table>
+        <a href="/admin"><button type="submit">Zurück</button></a>
     </div>
 </div>
 @endsection

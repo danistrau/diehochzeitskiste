@@ -1,6 +1,7 @@
 @extends('layouts.master') @section('container')
 <main>
     <section class="main">
+        <h1 class="subheader">{{ $type }}</h1>
         <div class="main-form">
             <h2>Bilder hochladen</h2>
             <form
@@ -31,14 +32,43 @@
     </section>
     <section>
         @if(count($imgs))
-        <ul>
+        <ul class="imgs">
             @foreach($imgs as $img)
             <li>
-                <img src="{{ asset('storage/'.$img) }}" />
+                <img src="{{ asset('storage/'.$img) }}" id="img" />
             </li>
+            <button type="button" id="delete_image">
+                <i class="fa fa-trash-o"></i>
+            </button>
             @endforeach
         </ul>
         @else Es gibt keine Bilder @endif
     </section>
 </main>
-@endsection
+@endsection @push('scripts')
+
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                "X-CSRF-TOKEN": document.head.querySelector(
+                    'meta[name="csrf-token"]'
+                ).content
+            }
+        });
+
+        $(".delete_image").click(function() {
+            var img = $("#img").attr("src");
+            alert(img);
+            $.ajax({
+                type: "GET",
+                url: "/deleteImage",
+                data: { img: img },
+                success: function(data) {
+                    console.log("ajaxdata", data);
+                }
+            });
+        });
+    });
+</script>
+@endpush

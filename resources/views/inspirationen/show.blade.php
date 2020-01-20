@@ -3,7 +3,7 @@
     <section class="main-head">
         <div class="main">
             <div>
-                <h1 class="subheader">Titel</h1>
+                <h1 class="subheader">{{ $type}}</h1>
             </div>
         </div>
     </section>

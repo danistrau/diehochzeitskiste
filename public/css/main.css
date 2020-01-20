@@ -375,6 +375,12 @@ h3 {
     flex-basis: 33, 3%;
 }
 
+.main-inspiration .inspiration li:hover {
+    transition: 0, 4s;
+    transform: scale(1.1);
+}
+
+
 .budgetrechner div {
     border: solid;
     border-width: 0px 0 2px;
@@ -546,10 +552,8 @@ footer {
 }
 
 .footersvg {
-    fill: #ffffff;
     cursor: pointer;
-    height: 35px;
-    width: 35px;
+    color: #ffffff;
 }
 
 .footerlink {

@@ -1,16 +1,7 @@
 <footer>
     <div class="footer">
         <div class="to-top">
-            <svg
-                class="footersvg"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 129 129"
-            >
-                <path
-                    d="M121.3 88.5c.8.8 1.2 1.8 1.2 2.9 0 1.1-.4 2.1-1.2 2.9-1.6 1.6-4.2 1.6-5.8 0l-51-51-51 51c-1.6 1.6-4.2 1.6-5.8 0s-1.6-4.2 0-5.8l53.9-53.9c1.6-1.6 4.2-1.6 5.8 0l53.9 53.9z"
-                    fill="#ffffff"
-                />
-            </svg>
+            <i class="fa fa-chevron-up fa-lg footersvg" ></i>
         </div>
         <div class="footer-content">
             <div>
@@ -18,7 +9,6 @@
                     <svg
                         class="footerlogo"
                         version="1.1"
-                        id="Ebene_1"
                         xmlns="http://www.w3.org/2000/svg"
                         x="0"
                         y="0"
@@ -32,7 +22,7 @@
                                 stroke-miterlimit: 10;
                             }
                         </style>
-                        <g id="Ebene_1-2">
+                        <g>
                             <path
                                 class="st0"
                                 d="M11.6 12.2h30.8v26H11.6v-26z"
@@ -68,6 +58,11 @@
                 <ul>
                     <li><a class="footerlink" href="/überuns">Über mich</a></li>
                     <li><a class="footerlink" href="/datenschutz">Impressum & Datenschutz</a></li>
+                </ul>
+                <ul class="footer-socialmedia">
+                    <li><a target="_blank" href="https://www.facebook.com/diehochzeitskiste"><i class="fa fa-facebook-square fa-lg footersvg"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/diehochzeitskiste"><i class="fa fa-instagram fa-lg footersvg"></i></a></li>
+                    <li><a href="mailto:dani_strau@yahoo.de?subject=Mein Anliegen an die Hochzeitskiste"><i class="fa fa-envelope fa-lg footersvg"></i></a></li>
                 </ul>
             </div>
         </div>
