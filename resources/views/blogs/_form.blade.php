@@ -7,7 +7,7 @@
 
 <div class="form-group">
     <label>Text</label>
-    <textarea name="text">{{ $blog->text }}</textarea>
+    <textarea name="text" maxlength="5000">{{ $blog->text }}</textarea>
 </div>
 
 <div class="form-group form-check">

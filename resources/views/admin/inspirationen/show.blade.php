@@ -42,7 +42,7 @@
             </button>
             @endforeach
         </ul>
-        @else Es gibt keine Bilder @endif
+        @else Es sind keine Bilder vorhanden @endif
     </section>
 </main>
 @endsection @push('scripts')
