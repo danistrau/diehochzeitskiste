@@ -139,21 +139,36 @@ nav ul {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
-    .nav-nav .nav-content{
+    .nav-nav .nav-content {
         display: none;
     }
 
-    .inspiration{
+    .inspiration {
         justify-content: center;
+    }
+
+    .main-svg {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-content {
+        display: block;
+    }
+
+    .main-content img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: block;
     }
 }
 
 @media only screen and (min-width: 700px) {
-    .menu{
-        display:none;
+    .menu {
+        display: none;
     }
 }
-
 
 /* 
   Main
@@ -351,7 +366,7 @@ h3 {
     transform: scale(1.1);
 }
 
-.checked{
+.checked {
     background-color: rgba(241, 228, 230, 0.66);
 }
 
@@ -383,7 +398,6 @@ h3 {
     transition: 0, 4s;
     transform: scale(1.1);
 }
-
 
 .budgetrechner div {
     border: solid;
@@ -719,5 +733,3 @@ Table
         border-bottom: 0;
     }
 }
-
-
