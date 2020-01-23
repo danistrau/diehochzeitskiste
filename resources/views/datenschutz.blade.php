@@ -2,7 +2,7 @@
 <main>
     <section class="main-head">
         <div class="main">
-            <div>
+            <div class="datenschutz">
                 <h1 class="subheader">Impressum & Datenschutz</h1>
                 <h2>Impressum</h2>
                     <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
