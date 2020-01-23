@@ -41,6 +41,8 @@ Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
     Route::get('/inspirationen', 'AdminController@inspirationen')->name('inspirationen');
     Route::get('/inspirationen/{type}', 'AdminController@inspirationenType')->name('inspirationenType');
     Route::post('/inspirationen/uploadImgs', 'AdminController@uploadImgs')->name('uploadImgs');
+    Route::delete('/inspirationen/image', 'AdminController@deleteImage')->name('inspirationen.img.delete');
+
 
 });
 

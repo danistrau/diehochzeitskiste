@@ -47,9 +47,13 @@ class AdminController extends Controller
         return redirect()->route('admin.inspirationenType', ['type' => $type]);
     }
 
-    private function deleteImage(Task $task)
+    public function deleteImage(Request $request)
     {
-        Storage::delete( public_path('/app/public/' . $task->image));
+        $filename= base64_decode($request->get('img'));
+       
         
+        return [
+            'success' => \Storage::delete( $filename )
+        ];
     }
 }

@@ -35,9 +35,9 @@
         <ul class="imgs">
             @foreach($imgs as $img)
             <li>
-                <img src="{{ asset('storage/'.$img) }}" id="img" />
+                <img src="{{ asset('storage/'.$img) }}" />
             </li>
-            <button type="button" id="delete_image">
+            <button type="button" class="delete_image" data-filename="{{$img}}">
                 <i class="fa fa-trash-o"></i>
             </button>
             @endforeach
@@ -59,12 +59,11 @@
         });
 
         $(".delete_image").click(function() {
-            var img = $("#img").attr("src");
-            alert(img);
+            var img = $(this).data("filename");
+            var url = "{{route("admin.inspirationen.img.delete")}}?img=" + btoa(img) ;
             $.ajax({
-                type: "GET",
-                url: "/deleteImage",
-                data: { img: img },
+                type: "DELETE",
+                url: url,
                 success: function(data) {
                     console.log("ajaxdata", data);
                 }
