@@ -17,10 +17,4 @@ class InspirationController extends Controller
       ]);
    }
 
-   private function deleteImage(Task $task)
-    {
-        Storage::delete( public_path('/app/public/' . $task->image));
-        
-    }
-
 }
