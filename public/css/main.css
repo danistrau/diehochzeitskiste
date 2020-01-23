@@ -138,8 +138,8 @@ nav ul {
     width: 20px;
 }
 
-@media only screen and (min-device-width: 370px) and (max-device-width: 800px) {
-    .nav-nav .nav-content {
+@media only screen and (min-width: 370px) and (max-width: 800px) {
+    .nav-content {
         display: none;
     }
 
@@ -153,7 +153,11 @@ nav ul {
     }
 
     .main-content {
-        display: block;
+        flex-direction: column;
+    }
+
+    .main-header{
+        width: 65%;
     }
 
     .main-content img{
@@ -173,6 +177,10 @@ nav ul {
     .footer-content{
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .footer-footerlink{
+        flex-direction: column;
     }
 
     .aboutme{
@@ -195,7 +203,7 @@ nav ul {
     }
 }
 
-@media only screen and (min-device-width: 800px) {
+@media only screen and (min-width: 800px) {
     .menu {
         display: none;
     }
