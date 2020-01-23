@@ -44,6 +44,7 @@
         </ul>
         @else Es sind keine Bilder vorhanden @endif
     </section>
+    <a href="{{ route('admin.inspirationen') }}"><button type="submit">Zurück</button></a>
 </main>
 @endsection @push('scripts')
 
