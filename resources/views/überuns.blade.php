@@ -5,7 +5,7 @@
             <div>
                 <h1 class="subheader">Lernt mich kennen</h1>
                 <div class="aboutme ">
-                    <img src="{{ asset('/assets/dani.jpg') }}" />
+                    <img src="{{ asset('/assets/Dani.jpg') }}" />
                     <p class="main-p">
                         Ich, Daniela Strauss, studiere an der SAE Wien Web
                         Design & Development. Neben dem Studium bin ich als
