@@ -7,9 +7,6 @@
             <li class="nav_content"><a  href="/budget">Budget</a></li>
             <li class="nav_content"><a href="/inspirationen">Inspiriation</a></li>
             <li class="nav_content"><a href="/blogs">Blog's</a></li>
-            <li class="menu">
-                <div id="burger"><a href="#" class="burger"><i class="fa fa-bars"></i></a></div>
-            </li>
         </ul>
         <div class="mobile-container">
             <ul class="nav-mobile">
@@ -44,6 +41,10 @@
                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                 </li>
             @endif
+           
         </ul>
+        <div class="menu nav_content">
+            <div id="burger"><a href="#" class="burger"><i class="fa fa-bars"></i></a></div>
+        </div>
     </div>
 </nav>
