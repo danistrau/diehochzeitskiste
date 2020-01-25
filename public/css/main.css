@@ -110,22 +110,25 @@ nav ul {
 
 .nav-mobile {
     flex-direction: column;
+    padding: 21px;
+
 }
 
 .mobile-container {
-    position: fixed;
-    height: 100%;
-    width: 50%;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    background-color: rgba(5, 5, 5, 0.9);
     text-align: center;
     display: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-color: #f1e5e6;
+    height: 100vh;
+    width: 80vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
 
 .mobile-content {
-    padding: 10px;
+    margin: 2rem;
 }
 
 .display {
