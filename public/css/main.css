@@ -138,7 +138,7 @@ nav ul {
     width: 20px;
 }
 
-@media only screen and (min-width: 370px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
     .nav-content {
         display: none;
     }
@@ -156,8 +156,8 @@ nav ul {
         flex-direction: column-reverse;
     }
 
-    .main-header{
-        width: 65%;
+    .header{
+        font-size: 50px;
     }
 
     .main-content img{
@@ -627,7 +627,7 @@ footer {
     width: 50%;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
     .footer {
         display: inline;
         text-align: center;
