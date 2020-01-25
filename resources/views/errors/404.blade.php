@@ -45,7 +45,7 @@
 
         .errortext {
             font-size: larger;
-            margin-top: 430px;
+            margin-top: 450px;
         }
 
         .errorheader {
