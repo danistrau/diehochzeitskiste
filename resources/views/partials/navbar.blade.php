@@ -12,7 +12,7 @@
             <ul class="nav-mobile">
                 <li class="mobile-content"><a  href="{{ route('checklist.index') }}">Checkliste</a></li>
                 <li class="mobile-content"><a  href="/budget">Budget</a></li>
-                <li class="mobile-content"><a href="/inspiriation">Inspiriation</a></li>
+                <li class="mobile-content"><a href="/inspirationen">Inspiriation</a></li>
                 <li class="mobile-content"><a href="/blogs">Blog's</a></li>
             </ul>
         </div>

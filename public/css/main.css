@@ -194,7 +194,7 @@ nav ul {
     }
 
     .aboutme{
-        display: block;
+        flex-direction: column;
     }
 
     .aboutme img{

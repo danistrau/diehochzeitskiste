@@ -10,7 +10,7 @@
                     <label for="name">{{ __("Name") }}</label>
 
                     <div>
-                        <input id="name" type="text" @error('name') is-invalid
+                        <input id="name"  placeholder="Max Mustermann" type="text" @error('name') is-invalid
                         @enderror" name="name" value="{{ old("name") }}"
                         required autocomplete="name" autofocus> @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -21,12 +21,13 @@
                 </div>
 
                 <div>
-                    <label for="email">{{ __("E-Mail Address") }}</label>
+                    <label for="email">{{ __("E-Mail Adresse") }}</label>
 
                     <div>
                         <input
                             id="email"
                             type="email"
+                            placeholder="max.muster@mann.at"
                             class="form-control @error('email') is-invalid @enderror"
                             name="email"
                             value="{{ old('email') }}"
@@ -43,12 +44,13 @@
                 </div>
 
                 <div>
-                    <label for="password">{{ __("Password") }}</label>
+                    <label for="password">{{ __("Passwort") }}</label>
 
                     <div>
                         <input
                             id="password"
                             type="password"
+                            placeholder="Passwort"
                             class="form-control @error('password') is-invalid @enderror"
                             name="password"
                             required
@@ -65,13 +67,14 @@
 
                 <div>
                     <label for="password-confirm">{{
-                        __("Confirm Password")
+                        __("Passwort bestätigen")
                     }}</label>
 
                     <div>
                         <input
                             id="password-confirm"
                             type="password"
+                            placeholder="Passwort"
                             class="form-control"
                             name="password_confirmation"
                             required

@@ -8,7 +8,7 @@
         </div>
     </section>
     <section class="main-inspiration">
-        <a href="/inspirationen"><button type="submit">Zurück</button></a>
+        <div class="main-p"><a href="/inspirationen"><button type="submit">Zurück</button></a></div>
         <div class=" gallery" id="gallery">
             @if(count($imgs)) @foreach($imgs as $img)
             <div class="gallery-item">
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            @endforeach @else Es gibt keine Bilder @endif
+            @endforeach @else <p class="main-p">Es stehen keine Bilder zur Verfügung!</p> @endif
         </div>
     </section>
 </main>
