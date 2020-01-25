@@ -111,7 +111,6 @@ nav ul {
 .nav-mobile {
     flex-direction: column;
     padding: 21px;
-
 }
 
 .mobile-container {
@@ -138,89 +137,6 @@ nav ul {
 #burger {
     z-index: 30;
     width: 20px;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 800px) {
-    .nav-nav .nav_content {
-        display: none;
-    }
-
-     .navbar-nav{
-        flex-direction: column-reverse;
-    }
-
-    .logo{
-        width: 35%;
-    }
-
-    .inspiration {
-        justify-content: center;
-    }
-
-    .main-svg {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .main-content {
-        flex-direction: column-reverse;
-    }
-
-    .header{
-        font-size: 50px;
-    }
-
-    .main-content img{
-        margin-left: auto;
-        margin-right: auto;
-        width: 85%;
-        display: block;
-    }
-    .main-form{
-        flex-direction: column;
-    }
-
-    form{
-        align-self: center;
-    }
-
-    footer svg{
-        display: none;
-    }
-    
-    .footer-content{
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .footer-footerlink{
-        flex-direction: column;
-    }
-
-    .aboutme{
-        flex-direction: column;
-    }
-
-    .aboutme img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }
-
-    .datenschutz{
-        text-align: center;
-    }
-
-    .budgetrechner{
-        flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .menu {
-        display: none;
-    }
 }
 
 /* 
@@ -641,6 +557,106 @@ footer {
     width: 50%;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+/*
+RESPONSIVE
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    .nav-nav .nav_content {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .inspiration {
+        justify-content: center;
+    }
+
+    .inspiration img {
+        width: 100%;
+        height: auto;
+    }
+
+    .change {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-svg {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        font-size: 50px;
+    }
+
+    .main-content img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        display: block;
+    }
+    .main-form {
+        flex-direction: column;
+    }
+
+    form {
+        align-self: center;
+    }
+
+    footer svg {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer-footerlink {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .aboutme img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .datenschutz {
+        text-align: center;
+    }
+
+    .budgetrechner {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .menu {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 800px) {
     .footer {
         display: inline;
@@ -670,10 +686,6 @@ footer {
         opacity: 1;
         transform: scale(1) translate3d(0, 0, 0);
     }
-}
-
-.cursor-pointer {
-    cursor: pointer;
 }
 
 /*
