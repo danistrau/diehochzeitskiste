@@ -153,7 +153,7 @@ nav ul {
     }
 
     .main-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .main-header{
@@ -163,7 +163,7 @@ nav ul {
     .main-content img{
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 85%;
         display: block;
     }
     .main-form{
