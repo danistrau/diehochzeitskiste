@@ -23,8 +23,8 @@ Route::get('/inspirationen', function () {
     return view('inspirationen.index');
 });
 
-Route::get('/überuns', function () {
-    return view('überuns');
+Route::get('/übermich', function () {
+    return view('übermich');
 });
 
 Route::get('/datenschutz', function () {

@@ -56,7 +56,7 @@
             </div>
             <div class="footer-text">
                 <ul class="footer-footerlink">
-                    <li><a class="footerlink" href="/überuns">Über mich</a></li>
+                    <li><a class="footerlink" href="/übermich">Über mich</a></li>
                     <li><a class="footerlink" href="/datenschutz">Impressum & Datenschutz</a></li>
                 </ul>
                 <ul class="footer-socialmedia">
