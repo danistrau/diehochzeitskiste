@@ -184,6 +184,10 @@ nav ul {
         align-self: center;
     }
 
+    footer svg{
+        display: none;
+    }
+    
     .footer-content{
         flex-direction: column-reverse;
         text-align: center;
