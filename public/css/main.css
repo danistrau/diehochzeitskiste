@@ -565,16 +565,22 @@ RESPONSIVE
 */
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
+    body{
+        font-size: 16px;
+    }
+    
     .nav-nav .nav_content {
         display: none;
     }
 
     .navbar-nav {
         flex-direction: column-reverse;
+        font-size: 13px;
+        margin: 5px;
     }
 
     .logo {
-        width: 35%;
+        width: 30%;
     }
 
     .inspiration {
@@ -597,6 +603,7 @@ RESPONSIVE
 
     .main-content {
         flex-direction: column-reverse;
+        padding-top: 70px;
     }
 
     .header {
