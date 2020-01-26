@@ -580,7 +580,7 @@ RESPONSIVE
     }
 
     .logo {
-        width: 30%;
+        width: 25%;
     }
 
     .inspiration {
@@ -618,6 +618,7 @@ RESPONSIVE
     }
     .main-form {
         flex-direction: column;
+        margin-top: 65px;
     }
 
     form {
@@ -654,6 +655,11 @@ RESPONSIVE
 
     .budgetrechner {
         flex-direction: column;
+    }
+
+    .checklist{
+        margin: 20px;
+        padding: 0;
     }
 }
 
