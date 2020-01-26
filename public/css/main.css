@@ -575,8 +575,8 @@ RESPONSIVE
 
     .navbar-nav {
         flex-direction: column-reverse;
-        font-size: 13px;
-        margin: 5px;
+        font-size: 14px;
+        margin: 10px;
     }
 
     .logo {
@@ -603,7 +603,7 @@ RESPONSIVE
 
     .main-content {
         flex-direction: column-reverse;
-        padding-top: 70px;
+        padding-top: 80px;
     }
 
     .header {
