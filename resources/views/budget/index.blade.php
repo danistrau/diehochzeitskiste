@@ -25,11 +25,11 @@
                 type="number"
                 name="total_budget"
                 value="{{ $total_budget }}"
-            /><br />
+            />
         </form>
         <div class="main-p">
-            <span class="subheader">Verbleibendes Budget</span><br />
-            <h3>{{ $rest_budget }}</h3>
+            <p class="subheader">Verbleibendes Budget</p>
+            <h3 class="rest_budget">{{ $rest_budget }}</h3>
         </div>
 
         <ul class="budgetrechner">

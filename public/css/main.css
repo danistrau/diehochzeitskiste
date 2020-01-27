@@ -377,6 +377,14 @@ h3 {
     align-self: center;
 }
 
+.rest_budget {
+    color: #f1e5e6;
+    text-shadow: 2px 1px #3a3a3a;
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 0;
+}
+
 .inspiration div {
     background-color: #e4dadb;
     color: #3a3a3a;
@@ -564,10 +572,10 @@ RESPONSIVE
 */
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-    body{
+    body {
         font-size: 16px;
     }
-    
+
     .nav-nav .nav_content {
         display: none;
     }
@@ -656,12 +664,12 @@ RESPONSIVE
         flex-direction: column;
     }
 
-    .checklist{
+    .checklist {
         margin: 20px;
         padding: 0;
     }
 
-    .main-budgetrechner .budgetrechner li{
+    .main-budgetrechner .budgetrechner li {
         flex-direction: column;
     }
 }
