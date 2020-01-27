@@ -1,6 +1,6 @@
 @extends('layouts.master') @section('container')
 
-<section class="main blogdetail">
+<main class="main blogdetail">
     <div class="main-text">
         <div>
             @if($blog->is_published)
@@ -34,6 +34,6 @@
             </span>
         </div>
     </div>
-</section>
+</main>
 
 @endsection

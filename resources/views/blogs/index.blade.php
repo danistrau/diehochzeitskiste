@@ -19,7 +19,7 @@
             ><br />
             @endif
             <span>
-                <a href="{{ route('blogs.show', $blog->id) }}">Anzeigen</a>
+                <a href="{{ route('blogs.show', $blog->id) }}">Lesen Sie mehr ...</a>
             </span>
         </div>
         @endforeach
