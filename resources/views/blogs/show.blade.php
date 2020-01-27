@@ -11,8 +11,7 @@
             <h1>{{ $blog->title }}</h1>
             <div class="checklist">
                 <p class="lead">{{ $blog->text }}</p>
-                <p>{{($blog->created_at) }}</p>
-
+                <p>Erstellt am: {{($blog->created_at) }}</p>
                 @if($blog->user)
                 <p>Author: {{ $blog->user->name }}</p>
                 @endif

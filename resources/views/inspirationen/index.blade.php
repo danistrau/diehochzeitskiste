@@ -10,7 +10,7 @@
     <section class="main-inspiration">
         <ul class="inspiration">
             <li>
-                <a href="{{ route('inspirationenType', ['type'=> 'vintage']) }}"
+                <a href="{{ route('inspirationenType', ['type'=> 'Vintage']) }}"
                     ><div class="change"><h2>Vintage</h2></div>
                     <img
                         src="{{ asset('/assets/vintage.jpg') }}"
@@ -19,7 +19,7 @@
             </li>
             <li>
                 <a
-                    href="{{ route('inspirationenType', ['type'=> 'trachten']) }}"
+                    href="{{ route('inspirationenType', ['type'=> 'Trachten']) }}"
                     ><div class="change"><h2>Trachten</h2></div>
                     <img
                         src="{{ asset('/assets/trachten.jpg') }}"
@@ -28,7 +28,7 @@
             </li>
             <li>
                 <a
-                    href="{{ route('inspirationenType', ['type'=> 'klassisch']) }}"
+                    href="{{ route('inspirationenType', ['type'=> 'Klassisch']) }}"
                     ><div class="change"><h2>Klassisch</h2></div>
                     <img
                         src="{{ asset('/assets/klassisch.jpg') }}"
@@ -37,7 +37,7 @@
             </li>
             <li>
                 <a
-                    href="{{ route('inspirationenType', ['type'=> 'im_freien']) }}"
+                    href="{{ route('inspirationenType', ['type'=> 'Im Freien']) }}"
                     ><div class="change"><h2>Im Freien</h2></div>
                     <img
                         src="{{ asset('/assets/freien.jpg') }}"
