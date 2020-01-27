@@ -26,8 +26,11 @@
                 name="total_budget"
                 value="{{ $total_budget }}"
             /><br />
-            <button type="submit">Speichern</button>
         </form>
+        <div class="main-p">
+            <span class="subheader">Verbleibendes Budget</span><br />
+            <h3>{{ $rest_budget }}</h3>
+        </div>
 
         <ul class="budgetrechner">
             @foreach($budgets as $budget)
@@ -46,10 +49,6 @@
             </li>
             @endforeach
         </ul>
-        <div class="main-p">
-            <span class="subheader">Verbleibendes Budget</span><br />
-            <h3>{{ $rest_budget }}</h3>
-        </div>
     </section>
 </main>
 @endsection @push('scripts')
