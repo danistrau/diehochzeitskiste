@@ -12,23 +12,23 @@ $edit = $edit ?? false;
     </div>
 @endif
 <div class="form-group">
-    <label>Titel</label>
+    <label>Titel</label><br/>
     <input type="text" name="title" value="{{ $edit ? $blog->title : old('title') }}" required />
 </div>
 
 <div class="form-group">
-    <label>Text</label>
-    <textarea name="text" style="width:100%; height:150px;">{{ $edit ? $blog->text : old('text') }}</textarea>
+    <label>Text</label><br/>
+    <textarea name="text" style="width:50%; height:150px;">{{ $edit ? $blog->text : old('text') }}</textarea>
 </div>
 
 <div class="form-group form-check">
+    <label for="checkPublished">Online</label><br/>
     <input
         type="checkbox"
         class="form-check-input"
         id="checkPublished"
         name="is_published"
         {{ ($edit ? $blog->is_published : old('is_published')) ? 'checked' : '' }}>
-    <label for="checkPublished"> Publish</label>
 </div>
 
 <button type="submit">Speichern</button>
