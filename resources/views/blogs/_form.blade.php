@@ -1,13 +1,24 @@
 @csrf
-
+@php 
+$edit = $edit ?? false;
+@endphp
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 <div class="form-group">
     <label>Titel</label>
-    <input type="text" name="title" value="{{ $blog->title }}" required />
+    <input type="text" name="title" value="{{ $edit ? $blog->title : old('title') }}" required />
 </div>
 
 <div class="form-group">
     <label>Text</label>
-    <textarea name="text" maxlength="5000">{{ $blog->text }}</textarea>
+    <textarea name="text" style="width:100%; height:150px;">{{ $edit ? $blog->text : old('text') }}</textarea>
 </div>
 
 <div class="form-group form-check">
@@ -16,7 +27,7 @@
         class="form-check-input"
         id="checkPublished"
         name="is_published"
-        {{$blog->is_published ? 'checked' : '' }}>
+        {{ ($edit ? $blog->is_published : old('is_published')) ? 'checked' : '' }}>
     <label for="checkPublished"> Publish</label>
 </div>
 

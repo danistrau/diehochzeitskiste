@@ -42,7 +42,7 @@ class BlogController extends Controller
         $this->validate($request, [
 
             'title' => 'required|string|min:3|max:192',
-            'text' => 'required|string|between:2,140',
+            'text' => 'required|string',
 
         ]);
 

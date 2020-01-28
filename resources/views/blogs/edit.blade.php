@@ -11,7 +11,7 @@
                 method="post"
                 autocomplete="off"
             >
-                @method('put') @include('blogs._form')
+                @method('put') @include('blogs._form', ['edit' => true])
             </form>
         </div>
     </div>

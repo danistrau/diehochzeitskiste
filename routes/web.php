@@ -34,7 +34,7 @@ Route::get('/datenschutz', function () {
 Route::get('inspirationen/{type}', 'InspirationController@show')->name('inspirationenType');
 
 
-Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
+Route::middleware('auth')->middleware('admin')->name('admin.')->prefix('admin')->group(function() {
 
     Route::get('', 'AdminController@index')->name('index');
     Route::get('/users', 'AdminController@users')->name('users');
