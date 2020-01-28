@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Blog extends Model
 {
@@ -19,5 +20,9 @@ class Blog extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function canEdit() {
+        return $this->user->id == Auth::user()->id;
     }
 }

@@ -8,9 +8,11 @@
         </div>
     </section>
     <section class="main-text">
+        @auth
         <a href="{{ route('blogs.create') }}" class="btn btn-primary mb-4">
             <button class="fa fa-plus">Neuen Blog erstellen</button>
         </a>
+        @endauth
         @foreach($blogs as $blog)
         <div class="blog_text">
             <h2>{{ $blog->title }}</h2>

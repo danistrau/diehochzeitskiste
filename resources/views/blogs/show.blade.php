@@ -16,11 +16,11 @@
                 <p>Author: {{ $blog->user->name }}</p>
                 @endif
             </div>
-            @if($blog->user)
             <span>
                 <a href="{{ route('blogs.index') }}"
                     ><button type="submit">Zurück</button></a
                 >
+                @if($blog->canEdit())
                 <a href="{{ route('blogs.edit', $blog->id) }}"
                     ><button type="submit">Bearbeiten</button></a
                 >
@@ -31,8 +31,8 @@
                     @csrf @method('delete')
                     <button type="submit">Löschen</button>
                 </form>
+                @endif
             </span>
-            @endif
         </div>
     </div>
 </main>

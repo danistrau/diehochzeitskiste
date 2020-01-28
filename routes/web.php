@@ -82,13 +82,17 @@ Route::middleware('auth')->name('usersbudget.')->prefix('usersbudget')->group(fu
 
 });
 
+Route::name('blogs.')->prefix('blogs')->group(function() {
+
+    Route::get('', 'BlogController@index')->name('index');
+    Route::get('/{blog}', 'BlogController@show')->name('show'); 
+});
+
 
 Route::middleware('auth')->name('blogs.')->prefix('blogs')->group(function() {
 
-    Route::get('', 'BlogController@index')->name('index');
     Route::get('/create', 'BlogController@create')->name('create');
     Route::post('', 'BlogController@store')->name('store');
-    Route::get('/{blog}', 'BlogController@show')->name('show'); 
     Route::get('/{blog}/edit', 'BlogController@edit')->name('edit');
     Route::put('/{blog}', 'BlogController@update')->name('update');
     Route::delete('/{blog}', 'BlogController@destroy')->name('destroy');
