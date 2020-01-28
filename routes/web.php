@@ -82,6 +82,7 @@ Route::middleware('auth')->name('usersbudget.')->prefix('usersbudget')->group(fu
 
 });
 
+
 Route::middleware('auth')->name('blogs.')->prefix('blogs')->group(function() {
 
     Route::get('', 'BlogController@index')->name('index');
@@ -94,7 +95,6 @@ Route::middleware('auth')->name('blogs.')->prefix('blogs')->group(function() {
 });
 
 Route::middleware('auth')->name('user.')->prefix('user')->group(function() {
-
 
     Route::post('inputBudget/{budget}', 'UserController@inputBudget')->name('inputBudget');
    

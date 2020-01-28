@@ -16,6 +16,7 @@
                 <p>Author: {{ $blog->user->name }}</p>
                 @endif
             </div>
+            @if($blog->user)
             <span>
                 <a href="{{ route('blogs.index') }}"
                     ><button type="submit">Zurück</button></a
@@ -31,6 +32,7 @@
                     <button type="submit">Löschen</button>
                 </form>
             </span>
+            @endif
         </div>
     </div>
 </main>
