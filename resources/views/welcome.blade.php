@@ -50,6 +50,7 @@
             steht Eurer Traumhochzeit nichts mehr im Weg! Wir unterstützen Euch
             bei der Budgetplanung mit einer Checkliste und bieten verschiedene
             Inspirationen.
+            Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg -verwalte deine Hochzeitsplanung an jedem Ort schnell und einfach.
         </p>
     </section>
 </main>
