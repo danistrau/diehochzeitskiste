@@ -3,10 +3,9 @@
     <section class="main-head">
         <div class="main">
             <div class="errorpage">
-                <h1 class="subheader errorheader">404</h1>
+                <h1 class="subheader errorheader">403</h1>
                 <div class="main-text errortext">
-                    <h2>Es tut uns Leid!</h2>
-                    <p>Diese Seite existiert nicht.</p>
+                    <h2>Du bist KEIN Admin!</h2>
                     <a href="{{ url('/') }}" class="button"
                         >Zurück zur Startseite</a
                     >
@@ -36,11 +35,11 @@
 
         h2{
             font-family: myfont;
-            font-size: 70px;
+            font-size: 90px;
         }
 
         .errorpage {
-            background: url(../assets/404.jpg);
+            background: url(../assets/403.jpg);
             background-size: cover;
             background-position: center;
             background-blend-mode: soft-light;
@@ -54,7 +53,6 @@
         }
 
         .errorheader {
-            color: #3a3a3a;
             padding-top: 60px;
             text-align: center;
         }
