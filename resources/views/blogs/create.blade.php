@@ -2,7 +2,7 @@
 
 <section class="main">
     <div class="main-text">
-        <div class="card card-body">
+        <div>
             <h1>Einen neuen Blog erstellen</h1>
 
             <form

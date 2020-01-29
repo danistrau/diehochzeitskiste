@@ -9,7 +9,7 @@
     </section>
     <section class="main-text">
         @auth
-        <a href="{{ route('blogs.create') }}" class="btn btn-primary mb-4">
+        <a href="{{ route('blogs.create') }}">
             <button class="fa fa-plus">Neuen Blog erstellen</button>
         </a>
         @endauth
