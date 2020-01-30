@@ -3,14 +3,14 @@
     <section class="main-head">
         <div class="main">
             <div>
-                <h1 class="subheader">Blog's</h1>
+                <h1 class="subheader">Blog</h1>
             </div>
         </div>
     </section>
     <section class="main-text">
         @auth
         <a href="{{ route('blogs.create') }}">
-            <button class="fa fa-plus">Neuen Blog erstellen</button>
+            <button>  Neuen Blog erstellen</button>
         </a>
         @endauth
         @foreach($blogs as $blog)

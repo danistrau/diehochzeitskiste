@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Helvetiva", sans-serif;
     font-size: 1.3rem;
     max-width: 1900px;
     margin: 0 auto;
@@ -184,9 +184,9 @@ h1 {
     background-color: #3a3a3a;
     color: #e4dadb;
     text-align: center;
-    padding: 55px;
+    padding: 72px;
     align-self: center;
-    margin-top: auto;
+   
 }
 
 .main-svg {
@@ -234,11 +234,11 @@ textarea {
 
 .input {
     border: solid 3px #f1e5e6;
-    padding: 5px;
+    padding: 15px;
     margin: 15px;
     text-align: center;
     transition: 0.3s ease-in-out;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 button {

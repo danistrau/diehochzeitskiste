@@ -3,7 +3,7 @@
     <section class="main-head">
         <div class="main">
             <div>
-                <h1 class="subheader">Lasst euch inspirieren</h1>
+                <h1 class="subheader">Lasst Euch inspirieren</h1>
             </div>
         </div>
     </section>

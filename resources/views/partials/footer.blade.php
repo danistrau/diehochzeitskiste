@@ -52,7 +52,7 @@
                         </g>
                     </svg></a
                 ><br />
-                <small>&copy;Design & Development by Daniela Strauss</small>
+                <small>&copy; Design & Development by Daniela Strauss</small>
             </div>
             <div class="footer-text">
                 <ul class="footer-footerlink">

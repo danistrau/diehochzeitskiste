@@ -13,7 +13,7 @@
         <h3>Hochzeitsplanung einfach gemacht</h3>
         <p class="main-p">
             Die Hochzeitskiste bietet das perfekte Werkzeug, um deine Hochzeit
-            einfach und bequem zu planen
+            einfach und bequem zu planen.
         </p>
     </section>
     <section class="main-body">
@@ -24,7 +24,7 @@
                         ><i class="fa fa-list-ul fa-4x"></i
                     ></a>
                     <h4>Checkliste</h4>
-                    <p>Habt alle To-Dos auf einem Blick</p>
+                    <p>Habt alle To-Do's auf einen Blick</p>
                 </li>
                 <li>
                     <a class="svglink" href="/budget"
@@ -37,8 +37,8 @@
                     <a class="svglink" href="/inspirationen"
                         ><i class="fa fa-lightbulb-o fa-4x"></i
                     ></a>
-                    <h4>Inpirationen</h4>
-                    <p>Lasst euch von Trends inspirieren</p>
+                    <h4>Inspirationen</h4>
+                    <p>Lasst Euch von Trends inspirieren</p>
                 </li>
             </ul>
         </div>
@@ -48,7 +48,7 @@
         <p>
             Hochzeitsplanung leicht gemacht - mit dem Online Hochzeitsplaner
             steht Eurer Traumhochzeit nichts mehr im Weg! Wir unterstützen Euch
-            bei der Budgetplanung mit einer Checkliste und bieten verschiedene
+            bei der Budgetplanung mit einer Checkliste und bieten jede Menge
             Inspirationen.
             Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg -verwalte deine Hochzeitsplanung an jedem Ort schnell und einfach.
         </p>
