@@ -92,7 +92,7 @@ Route::name('blogs.')->prefix('blogs')->group(function() {
 
 Route::middleware('auth')->name('blogs.')->prefix('blogs')->group(function() {
 
-    Route::get('blogs/create', 'BlogController@create')->name('create');
+    Route::get('/create', 'BlogController@create')->name('create');
     Route::get('/{blog}', 'BlogController@show')->name('show');
     Route::post('', 'BlogController@store')->name('store');
     Route::get('/{blog}/edit', 'BlogController@edit')->name('edit');
