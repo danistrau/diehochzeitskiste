@@ -6,14 +6,14 @@
             <li class="nav_content"><a  href="{{ route('checklist.index') }}">Checkliste</a></li>
             <li class="nav_content"><a  href="/budget">Budget</a></li>
             <li class="nav_content"><a href="/inspirationen">Inspiriation</a></li>
-            <li class="nav_content"><a href="/blogs">Blog's</a></li>
+            <li class="nav_content"><a href="/blogs">Blog</a></li>
         </ul>
         <div class="mobile-container">
             <ul class="nav-mobile">
                 <li class="mobile-content"><a  href="{{ route('checklist.index') }}">Checkliste</a></li>
                 <li class="mobile-content"><a  href="/budget">Budget</a></li>
                 <li class="mobile-content"><a href="/inspirationen">Inspiriation</a></li>
-                <li class="mobile-content"><a href="/blogs">Blog's</a></li>
+                <li class="mobile-content"><a href="/blogs">Blog</a></li>
             </ul>
         </div>
         <ul class="navbar-nav">

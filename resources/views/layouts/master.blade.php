@@ -37,6 +37,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="{{ asset('js/main.js') }}"></script>
+       
+						
+       	
         @stack('scripts')
     </body>
 </html>

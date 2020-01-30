@@ -18,7 +18,7 @@ $edit = $edit ?? false;
 
 <div class="form-group">
     <label>Text</label><br/>
-    <textarea name="text" style="width:50%; height:150px;">{{ $edit ? $blog->text : old('text') }}</textarea>
+    <textarea  name="text" style="width:50%; height:150px;">{{ $edit ? $blog->text : old('text') }}</textarea>
 </div>
 
 <div class="form-group form-check">

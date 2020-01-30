@@ -65,8 +65,9 @@ Sticky NAV
 
     tl.staggerFrom("section", 0.5, { x: -2000, opacity:1,}, 0.25);
 
-    tl.staggerFrom(".main-budgetrechner .budgetrechner li", 2, { x: -1500, opacity:1,}, 0.5);
-    tl.staggerFrom(".checklist_item", 2, { x: -1500, opacity:1,}, 0.25);
+    tl.staggerFrom(".main-budgetrechner .budgetrechner li", 0.5, { x: -1500, opacity:1,}, 0.1);
+    tl.staggerFrom(".checklist_item", 0.5, { x: -1500, opacity:1,}, 0.1);
+    tl.staggerFrom(".gallery-item", 0.5, { x: -2000, opacity:1,}, 0.25);
     
     
 });
