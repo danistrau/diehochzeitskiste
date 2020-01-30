@@ -311,7 +311,9 @@ h3 {
 
 .main-text {
     text-align: center;
-    margin-top: 80px;
+    max-width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .checklist {
@@ -333,6 +335,10 @@ h3 {
 .checklist_item:hover {
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
+}
+
+.main-checklist{
+    padding-bottom: 80px;
 }
 
 .checked {
@@ -360,6 +366,10 @@ h3 {
     border-style: solid;
     border-color: #f1e5e6;
     justify-content: space-between;
+}
+
+.main-budgetrechner{
+    padding-bottom: 80px;
 }
 
 .main-inspiration .inspiration li {
@@ -440,6 +450,7 @@ h3 {
 .aboutme {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 80px;
 }
 
 .aboutme p {
@@ -463,9 +474,11 @@ h3 {
 .blog {
     background: url(../assets/blog.jpg);
     background-size: cover;
+    background-color: #3a3a3a;
     background-position: center;
     background-blend-mode: soft-light;
     max-width: inherit;
+    padding-bottom: 80px;
 }
 
 .blog_text {
@@ -508,7 +521,6 @@ footer {
     background-color: #3a3a3a;
     color: #ffffff;
     padding: 30px 0;
-    margin-top: 100px;
 }
 
 .to-top {
