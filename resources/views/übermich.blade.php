@@ -7,23 +7,7 @@
                 <div class="aboutme ">
                     <img src="{{ asset('/assets/Dani.jpg') }}" />
                     <p class="main-p">
-                        Ich, Daniela Strauss, studiere an der SAE Wien Web
-                        Design & Development. Neben dem Studium bin ich als
-                        Student Support Kraft in der Raiffeisen
-                        Kapitalanlage-Gesellschaft tätig. Dort unterstützte ich
-                        bei der Bearbeitung und Betreuung der rcm.at Webseite.
-                        Bevor ich diesen Lebensabschnitt begonnen habe, habe ich
-                        circa vier Jahre als Kindergruppenbetreuerin gearbeitet.
-                        Zu meinen Tätigkeiten gehörten, neben der Betreuung der
-                        Kinder, lernen, singen, spielen, basteln und malen mit
-                        den Kleinen. Zusätzlich habe ich ehrenamtlich, für eine
-                        Organisation, mit Word Press gearbeitet und auch
-                        verschiedenen Social Media Kanäle wie Facebook, Twitter
-                        und Instagram betreut. Durch diese Erfahrungen habe ich
-                        das Interesse für die Branche entwickelt und somit
-                        entschieden meine berufliche Laufbahn zu ändern und an
-                        der SAE Wien begonnen zu studieren. Ich bin 29 Jahre
-                        jung und wohnhaft in Wien.
+                        Ich, Daniela Strauss, studiere an der SAE Wien Web Design & Development. Neben dem Studium bin ich als Student Support-Kraft in der Raiffeisen Kapitalanlage-Gesellschaft tätig. Dort unterstützte ich das Team bei der Bearbeitung und Betreuung der rcm.at Webseite. Vor diesem Lebensabschnitt habe ich vier Jahre als Kindergruppenbetreuerin gearbeitet. Zu meinen Tätigkeiten zählten, neben der Betreuung der Kinder, lernen, singen, spielen, basteln und malen. Zusätzlich habe ich ehrenamtlich, für eine Organisation, verschiedenen Social Media Kanäle wie Facebook, Twitter und Instagram betreut, sowie mit Word Press gearbeitet. Durch diese Erfahrungen habe ich großes Interesse für die Online-Branche entwickelt, entschieden an der SAE Wien zu studieren um eine neue berufliche Laufbahn einzuschlagen. Ich bin 29 Jahre jung und lebe in Wien.
                     </p>
                 </div>
             </div>
