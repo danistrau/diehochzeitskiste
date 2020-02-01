@@ -44,13 +44,13 @@
         </div>
     </section>
     <section class="main-text">
-        <h3>Was erwartet dich?</h3>
+        <h3>Was erwartet Euch?</h3>
         <p>
             Hochzeitsplanung leicht gemacht - mit dem Online Hochzeitsplaner
             steht Eurer Traumhochzeit nichts mehr im Weg! Wir unterstützen Euch
             bei der Budgetplanung mit einer Checkliste und bieten jede Menge
-            Inspirationen.
-            Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg -verwalte deine Hochzeitsplanung an jedem Ort schnell und einfach.
+            Inspirationen.</p>
+            <p>Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg - verwalte deine Hochzeitsplanung an jedem Ort schnell und einfach.
         </p>
     </section>
 </main>

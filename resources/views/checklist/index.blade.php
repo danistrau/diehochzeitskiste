@@ -13,11 +13,7 @@
             <li
                 class="checklist_item @if($item->checked) checked @endif"
                 id="checklist_item{{$item->id}}"
-            >
-                <a
-                    href="{{ route('checklist.show', $item->id) }}"
-                    >{{ $item->title }}</a
-                >
+            >{{ $item->title }}
                 <div>
                     @if(!$item->checked)
 

@@ -4,8 +4,9 @@
         <section class="main-head">
             <div class="main">
                 <div>
-                    <h1 class="subheader">Willkommen!</h1>
-                    <div class="main-text">
+                    <h1 class="subheader">Willkommen in der Hochzeitskiste!</h1>
+                    <h2 class="main-p">{{ auth()->user()->name }}</h2>
+                    <div>
                         @if (session('status'))
                         <span class="alert alert-success" role="alert">
                             {{ session("status") }}
@@ -15,10 +16,9 @@
                             <h3>Hochzeitsplanung einfach gemacht</h3>
                             <p class="main-p">
                                 Die Hochzeitskiste bietet das perfekte Werkzeug,
-                                um deine Hochzeit einfach und bequem zu planen
+                                um deine Hochzeit einfach und bequem zu planen.
                             </p>
                         </section>
-
                         <div class="main-form">
                             <ul class="main-svg">
                                 <li>
