@@ -26,6 +26,8 @@
                 name="total_budget"
                 value="{{ $total_budget }}"
             />
+            <button type="submit">Speichern</button
+                ><a href="{{ route('budget.index') }}"></a>
         </form>
         <div class="main-p">
             <p class="subheader">Verbleibendes Budget</p>
