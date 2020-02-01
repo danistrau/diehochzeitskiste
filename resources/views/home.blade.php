@@ -12,7 +12,7 @@
                             {{ session("status") }}
                         </span>
                         @endif
-                        <section class="main-text">
+                        <section>
                             <h3>Hochzeitsplanung einfach gemacht</h3>
                             <p class="main-p">
                                 Die Hochzeitskiste bietet das perfekte Werkzeug,
