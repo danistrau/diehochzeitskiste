@@ -157,7 +157,6 @@ h1 {
 
 .subheader {
     text-align: center;
-   
 }
 
 .budget p {
@@ -186,7 +185,6 @@ h1 {
     text-align: center;
     padding: 72px;
     align-self: center;
-   
 }
 
 .main-svg {
@@ -282,7 +280,7 @@ button:focus {
 .main-form {
     display: flex;
     justify-content: space-around;
-   
+
     background-color: #f1e5e6;
     margin-bottom: 100px;
 }
@@ -333,11 +331,11 @@ h3 {
 }
 
 .checklist_item:hover {
-    transition: 0.3s ease-in-out;
+    transition: 0.2s;
     transform: scale(1.1);
 }
 
-.main-checklist{
+.main-checklist {
     padding-bottom: 80px;
 }
 
@@ -348,8 +346,6 @@ h3 {
 .inspiration img {
     padding: 80px 0;
 }
-
-
 
 .inspiration {
     padding: 0;
@@ -368,15 +364,13 @@ h3 {
     justify-content: space-between;
 }
 
-.main-budgetrechner{
+.main-budgetrechner {
     padding-bottom: 80px;
 }
 
 .main-inspiration .inspiration li {
     flex-basis: 33, 3%;
 }
-
-
 
 .budgetrechner div {
     align-self: center;
@@ -423,17 +417,20 @@ h3 {
     box-shadow: 0 0 16px #333;
     transition: all 1.5s ease;
 }
+
 .gallery img:hover {
     box-shadow: 0 0 32px #333;
 }
 .gallery .content {
     padding: 4px;
 }
+
 .gallery .gallery-item {
     transition: grid-row-start 300ms linear;
     transition: transform 300ms ease;
     transition: all 0.5s ease;
 }
+
 .gallery .gallery-item:hover {
     transform: scale(1.025);
 }
@@ -490,6 +487,10 @@ h3 {
     background-color: rgba(241, 228, 230, 0.65);
 }
 
+.blog_text:hover {
+    transition: 0, 2s;
+    transform: scale(1.1);
+}
 
 .errorpage {
     background: url(../assets/404.jpg);
