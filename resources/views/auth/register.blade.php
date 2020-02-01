@@ -1,6 +1,7 @@
 @extends('layouts.master') @section('container')
 <main>
     <section class="main">
+        <h1 class="subheader">Anmeldung der Hochzeitskiste</h1>
         <div class="main-form">
             <h2>Registrierung</h2>
             <form class="form" method="POST" action="{{ route('register') }}">

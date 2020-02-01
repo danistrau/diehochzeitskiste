@@ -1,6 +1,7 @@
 @extends('layouts.master') @section('container')
 <main>
     <section class="main">
+        <h1 class="subheader">Login-Bereich</h1>
         <div class="main-form">
             <h2>Login</h2>
             <form class="form" id="form" method="POST" action="{{ route('login') }}">
