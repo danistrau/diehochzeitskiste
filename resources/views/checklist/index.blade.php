@@ -5,7 +5,7 @@
             <div>
                 <h1 class="subheader">Checkliste</h1>
                 <p class="main-text">
-                    Ihr habt die Möglichkeit Euch selbst eine To-Do Liste zu erstellen. Die einzelnen Punkte könnt Ihr je nach Erledigung abhacken.
+                    Ihr habt die Möglichkeit Euch selbst eine To-Do Liste zu erstellen. Die einzelnen Punkte könnt Ihr je nach Erledigung abhacken oder auch weider löschen.
                 </p>
             </div>
         </div>
