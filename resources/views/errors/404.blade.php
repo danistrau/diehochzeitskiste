@@ -3,8 +3,8 @@
     <section class="main-head">
         <div class="main">
             <div class="errorpage">
-                <h1 class="subheader errorheader">404</h1>
                 <div class="main-text errortext">
+                    <h1 class="subheader errorheader">404</h1>
                     <h2>Es tut uns Leid!</h2>
                     <p>Diese Seite existiert nicht.</p>
                     <a href="{{ url('/') }}" class="button"
@@ -29,15 +29,9 @@
         }
 
         h1 {
-            font-family: myfont;
-            color: #e4dadb;
             font-size: 80px;
         }
 
-        h2{
-            font-family: myfont;
-            font-size: 70px;
-        }
 
         .errorpage {
             background: url(../assets/404.jpg);
@@ -50,14 +44,9 @@
 
         .errortext {
             font-size: larger;
-            margin-top: 450px;
+            padding-top: 400px;
         }
-
-        .errorheader {
-            color: #3a3a3a;
-            padding-top: 60px;
-            text-align: center;
-        }
+       
 
         button {
             z-index: 10;

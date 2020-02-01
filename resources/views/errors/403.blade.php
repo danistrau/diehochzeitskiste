@@ -3,8 +3,8 @@
     <section class="main-head">
         <div class="main">
             <div class="errorpage">
-                <h1 class="subheader errorheader">403</h1>
                 <div class="main-text errortext">
+                    <h1 class="subheader errorheader">403</h1>
                     <h2>Du bist KEIN Admin!</h2>
                     <a href="{{ url('/') }}" class="button"
                         >Zurück zur Startseite</a
@@ -28,14 +28,7 @@
         }
 
         h1 {
-            font-family: myfont;
-            color: #e4dadb;
             font-size: 80px;
-        }
-
-        h2{
-            font-family: myfont;
-            font-size: 90px;
         }
 
         .errorpage {
@@ -49,12 +42,7 @@
 
         .errortext {
             font-size: larger;
-            margin-top: 450px;
-        }
-
-        .errorheader {
-            padding-top: 60px;
-            text-align: center;
+            padding-top: 450px;
         }
 
         button {
