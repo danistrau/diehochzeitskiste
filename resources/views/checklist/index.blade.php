@@ -4,6 +4,9 @@
         <div class="main">
             <div>
                 <h1 class="subheader">Checkliste</h1>
+                <p class="main-text">
+                    Ihr habt die Möglichkeit Euch selbst eine To-Do Liste zu erstellen. Die einzelnen Punkte könnt Ihr je nach Erledigung abhacken.
+                </p>
             </div>
         </div>
     </section>
