@@ -29,9 +29,9 @@
                     document.getElementById('logout-form').submit();">Logout</a>
                 </li>
 
-            <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none">
+            <li><form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none">
             @csrf
-            </form>
+            </form></li>
             @else
                 <li class="nav_content">
                     <a class="nav-link" href="{{ route('register') }}">Registrieren</a>

@@ -9,8 +9,7 @@
     </section>
     <section class="main-text">
         @auth
-        <a href="{{ route('blogs.create') }}">
-            <button>  Neuen Blog erstellen</button>
+        <a  class="button" href="{{ route('blogs.create') }}">Neuen Blog erstellen
         </a>
         @endauth
         @foreach($blogs as $blog)

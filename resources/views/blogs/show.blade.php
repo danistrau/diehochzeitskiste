@@ -17,12 +17,11 @@
                 @endif
             </div>
             <span>
-                <a href="{{ route('blogs.index') }}"
-                    ><button type="submit">Zurück</button></a
-                >
+              <a class="button" href="{{ route('blogs.index') }}"
+                        >Zurück</a>
                 @if($blog->canEdit())
-                <a href="{{ route('blogs.edit', $blog->id) }}"
-                    ><button type="submit">Bearbeiten</button></a
+                <a class="button" href="{{ route('blogs.edit', $blog->id) }}"
+                    >Bearbeiten</a
                 >
                 <form
                     action="{{ route('blogs.destroy', $blog->id) }}"
