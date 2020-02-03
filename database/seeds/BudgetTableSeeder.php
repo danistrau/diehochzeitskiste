@@ -18,6 +18,8 @@ class BudgetTableSeeder extends Seeder
             'Mode, Schmuck, Make-up',
             'Blumen & Deko',
             'Auto, Motorrad, Kutsche',
+            'Einladungen & Dankesschreiben',
+            'Poltern/Polterabend',
             'Sonstiges',
         ];
 
