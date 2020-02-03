@@ -24,7 +24,7 @@
                         ><i class="fa fa-list-ul fa-4x"></i
                     ></a>
                     <h4>Checkliste</h4>
-                    <p>Habt alle To-Do's auf einen Blick</p>
+                    <p>Habt alle To-do's auf einen Blick</p>
                 </li>
                 <li>
                     <a class="svglink" href="/budget"
@@ -47,10 +47,10 @@
         <h3>Was erwartet Euch?</h3>
         <p>
             Hochzeitsplanung leicht gemacht - mit dem Online Hochzeitsplaner
-            steht Eurer Traumhochzeit nichts mehr im Weg! Wir unterstützen Euch
-            bei der Budgetplanung mit einer Checkliste und bieten jede Menge
+            steht Eurer Traumhochzeit nichts mehr im Weg! Ich unterstütze Euch
+            bei der Budgetplanung mit einer Checkliste und biete jede Menge
             Inspirationen.</p>
-            <p>Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg - verwalte deine Hochzeitsplanung an jedem Ort schnell und einfach.
+            <p>Schluss mit Post-it’s am Kühlschrank und dem ewigen Papierkrieg - verwaltet Eure Hochzeitsplanung an jedem Ort schnell und einfach.
         </p>
     </section>
 </main>

@@ -17,7 +17,7 @@
         <div class="blog_text">
             <h2>{{ $blog->title }}</h2>
             @if($blog->user)
-            <span>Author: {{ $blog->user->name }}</span
+            <span>Autor: {{ $blog->user->name }}</span
             ><br />
             @endif
             <span>
