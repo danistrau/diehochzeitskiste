@@ -13,7 +13,7 @@
                         </span>
                         @endif
                         <section>
-                            <h3>Hochzeitsplanung einfach gemacht</h3>
+                            <h3 class="main-p">Hochzeitsplanung einfach gemacht</h3>
                             <p class="main-p">
                                 Die Hochzeitskiste bietet das perfekte Werkzeug,
                                 um deine Hochzeit einfach und bequem zu planen.
