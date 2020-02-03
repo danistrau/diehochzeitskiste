@@ -22,24 +22,25 @@
                         <div class="main-form">
                             <ul class="main-svg">
                                 <li>
-                                    <a
-                                        class="svglink"
-                                        href="{{ route('checklist.index') }}"
+                                    <a class="svglink" href="{{ route('checklist.index') }}"
                                         ><i class="fa fa-list-ul fa-4x"></i
                                     ></a>
-                                    <p>Checkliste</p>
+                                    <h4>Checkliste</h4>
+                                    <p>Habt alle To-do's auf einen Blick</p>
                                 </li>
                                 <li>
                                     <a class="svglink" href="/budget"
                                         ><i class="fa fa-credit-card fa-4x"></i
                                     ></a>
-                                    <p>Budgetrechner</p>
+                                    <h4>Budgetrechner</h4>
+                                    <p>Stellt sicher, dass Ihr im Budget bleibt</p>
                                 </li>
                                 <li>
                                     <a class="svglink" href="/inspirationen"
                                         ><i class="fa fa-lightbulb-o fa-4x"></i
                                     ></a>
-                                    <p>Inspiriationen</p>
+                                    <h4>Inspirationen</h4>
+                                    <p>Lasst Euch von Trends inspirieren</p>
                                 </li>
                             </ul>
                         </div>

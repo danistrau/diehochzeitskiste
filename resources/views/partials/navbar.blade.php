@@ -19,7 +19,7 @@
         <ul class="navbar-nav">
             @if(auth()->check())
                 <li class="nav_content">
-                    <a class="nav-link" href="#">{{ auth()->user()->name }}</a>
+                    <a class="nav-link" href="/home">{{ auth()->user()->name }}</a><br/>
                     @if (auth()->user()->is_admin === 1)
                     <a class="nav-link" href="{{ route('admin.index')}}">Dashboard</a> 
                     @endif
