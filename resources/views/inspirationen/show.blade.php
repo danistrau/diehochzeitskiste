@@ -21,7 +21,7 @@
             </div>
             @endforeach 
         </div>
-        @else <p class="main-p">Es stehen Momentan keine Bilder zur Verfügung!</p> @endif
+        @else <p class="main-p">Es stehen momentan keine Bilder zur Verfügung!</p> @endif
     </section>
 </main>
 @endsection

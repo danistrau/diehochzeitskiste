@@ -44,7 +44,7 @@
                         data-id="{{$budget->id}}"
                         type="number"
                         name="price"
-                        class="input-budget"
+                        class="input-budget input"
                         value="{{ $userBudget != null ? $userBudget->pivot->price : 0 }}"
                     />
                 </div>
